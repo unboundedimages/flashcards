@@ -1,0 +1,26 @@
+{
+  "name": "flashcards",
+  "version": "1.0.0",
+  "description": "A multiplication flash card app for kids to help reinforce multiplication memorization.",
+  "main": "\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unboundedimages/flashcards.git"
+  },
+  "keywords": [
+    "flashcards",
+    "multiplication",
+    "javascript",
+    "css-grid",
+    "STEM"
+  ],
+  "author": "Rodney Ross",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unboundedimages/flashcards/issues"
+  },
+  "homepage": "https://github.com/unboundedimages/flashcards#readme"
+}
