@@ -15,7 +15,7 @@ var stars = [
 "*********\n*********<br>*********\n*********\n*********<br>*********\n*********\n*********<br>*********\n*********",
 "*********<br>*********\n*********\n*********<br>*********\n*********\n*********<br>*********\n*********\n*********<br>*********",
 "*********\n*********\n*********<br>*********\n*********\n*********<br>*********\n*********\n*********<br>*********\n*********\n*********"
-]
+];
 var Current = 0;
 
 //take the product of those numbers and inject them into product div
@@ -44,4 +44,16 @@ function Prev(){
 					document.getElementById("stars").innerHTML = stars[Current];
 				}
 
+// Dynamically generate the "*"
+// function starz(){
+ // var i;
+ //    for (i = 12; i >= 0; i = i - 1) {
+ //        var s;
+ //        for (s = 0; s < i; s = s + 1) {
+ //            document.write("\n*********");
+ //        }
+ //        //print a new line
+ //        document.write("<br>");
 
+ //    }
+// }
