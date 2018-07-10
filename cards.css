@@ -24,27 +24,55 @@
 }
 
 .card #front_nine {
-	height: 165px;
-	width: 400px;
-	backface-visibility: hidden;
+	height: 298px;
+	width: 67%;
+	backface-visibility: hidden; 
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;;
 	position: absolute;
 	overflow: hidden;
-	text-align: center;
-	/*background-color: rgba(255, 251, 251, 1);*/
+	text-align: right;
+	color: #333;
+	font-size: 5.3em;
+	margin:auto;
+	padding-top: 9%;
+	color: rgb(112, 20, 127);
 }
 
-.card #stars {
+#line {
+	width: 104%;
+	text-align: right;
+}
+
+hr {
+	height: 1px;
+	border: 3px solid;
+	margin: 0em 11px 9px 111px;
+	padding: 0;
+}
+
+.card #back_nine {
 	height: 400px;
 	width: 400px;
 	text-align: center;
 	transform: rotateY(180deg);
+	color: rgb(255, 229, 3);
+	margin:auto;
+	/*padding-top: 9%;*/
+	font-size: 1.3em;
+	background-color: rgb(112, 20, 127);
 }
 
-#front_nine{
-	color: #333;
-	font-size: 2.3em;
-	/*position: absolute;*/
-	/*top: 86px;*/
-	padding-top: 27%;
-	color: rgb(112, 20, 127);
+#product {
+	
+}
+
+#stars {
+	margin: auto: ;
+	position: absolute;
+	top: 121px;
+	left: 14%;
+	overflow: hidden;
 }
