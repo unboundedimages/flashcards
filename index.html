@@ -7,169 +7,17 @@
 <body>
 	<header>Multiplication</header>
 	<div class="wrapper">
-		<div id="front">
-			<div id="front_1">
-				<div>&nbsp;&nbsp;&nbsp;9</div>
-				<div>x 1</div>
-				<div>___</div>
-				<div>&nbsp;&nbsp;&nbsp;9</div>
-			</div>
-			<div id="front_2">
-				<div>&nbsp;&nbsp;&nbsp;9</div>
-				<div>x 2</div>
-				<div>___</div>
-				<div>&nbsp;18</div>
-			</div>
-			<div id="front_3">
-				<div>&nbsp;&nbsp;&nbsp;9</div>
-				<div>x 3</div>
-				<div>___</div>
-				<div>&nbsp;27</div>
-			</div>
-			<div id="front_4">
-				<div>&nbsp;&nbsp;&nbsp;9</div>
-				<div>x 4</div>
-				<div>___</div>
-				<div>&nbsp;36</div>
-			</div>
-			<div id="front_5">
-				<div>&nbsp;&nbsp;&nbsp;9</div>
-				<div>x 5</div>
-				<div>___</div>
-				<div>&nbsp;45</div>
-			</div>
-			<div id="front_6">
-				<div>&nbsp;&nbsp;&nbsp;9</div>
-				<div>x 6</div>
-				<div>___</div>
-				<div>&nbsp;54</div>
-			</div>
-			<div id="front_7">
-				<div>&nbsp;&nbsp;&nbsp;9</div>
-				<div>x 7</div>
-				<div>___</div>
-				<div>&nbsp;63</div>
-			</div>
-			<div id="front_8">
-				<div>&nbsp;&nbsp;&nbsp;9</div>
-				<div>x 8</div>
-				<div>___</div>
-				<div>&nbsp;72</div>
-			</div>
-			<div id="front_9">
-				<div>&nbsp;&nbsp;&nbsp;9</div>
-				<div>x 9</div>
-				<div>___</div>
-				<div>&nbsp;81</div>
-			</div>
-			<div id="front_10">
-				<div>&nbsp;&nbsp;&nbsp;9</div>
-				<div>x 10</div>
-				<div>___</div>
-				<div>&nbsp;90</div>
-			</div>
+		<div id="front_nine">
+			<div id="multiplier">&nbsp;&nbsp;&nbsp;9</div>
+			<div id="operator">x <span id="multiplicand"></span></div>
+			<div id="line">____</div>
+			<div id="product">0	</div>
+			<div id="stars">0</div>
 		</div>
-		<div id="back">
-			<div id="1">
-				<ol>
-					<li>*** *** ***</li>
-				</ol>
-			</div>
-			<div id="2">
-				<ol>
-					<li>*********</li>
-					<li>*********</li>
-				</ol>
-			</div>
-			<div id="3">
-				<ol>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-				</ol>
-			</div>
-			<div id="4">
-				<ol>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-				</ol>
-			</div>
-			<div id="5">
-				<ol>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-				</ol>
-			</div>
-			<div id="6">
-				<ol>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-				</ol>
-			</div>
-			<div id="7">
-				<ol>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-				</ol>
-			</div>
-			<div id="8">
-				<ol>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-				</ol>
-			</div>
-			<div id="9">
-				<ol>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-				</ol>
-			</div>
-			<div id="10">
-				<ol>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-					<li>*********</li>
-				</ol>
-			</div>
-		</div>
-		<button>NEXT CARD</button>
-		
-		<div id="myDIV"></div>
-		<p><button onclick="myFunction()">Click Me</button></p>
+	</div>
+	<div>
+		<button onclick="Next();">Next!</button>
+		<button onclick="Prev();">Previous</button>
 	</div>
 	<footer>Fundamentals</footer>
 </body>
