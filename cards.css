@@ -163,3 +163,31 @@ hr {
 	color: rgb(255, 229, 3);
 }
 
+button {
+	font-size: 1.0em;
+	border: none;
+	width: 123px;
+	height: 48px;
+	display: block;
+	text-align:center;
+	text-decoration:none;
+	color: #ecf0f1;
+	outline-color: rgb(67, 22, 61);
+	box-shadow: 0px 6px 10px #4f2c50;
+	background: #7e2972;
+	margin: auto;
+	margin-top: 20px;
+}
+
+button:active {
+	border: none;
+	position:relative;
+	top:3px;
+	/*box-shadow: 0px 0px #2c3e50;*/
+	background: #ffe503;
+	color: #7e2972;
+}
+
+button:focus {
+
+}
