@@ -1,8 +1,14 @@
+body {
+	background-image: url(img/yellowpurple.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .wrapper {
 	cursor: pointer;
 	height: 400px;
-	width: 400px;
-	perspective: 1200px;
+	width: 300px;
+	perspective: 1800px;
 	position: relative;
 	margin: auto;
 	transition: ease-in;
@@ -10,7 +16,7 @@
 
 .card {
 	height: 400px;
-	width: 400px;
+	width: 300px;
 	position: absolute;
 	border: 1px solid #300;
 	transform-style: preserve-3d;
@@ -55,7 +61,7 @@ hr {
 
 .card #back_nine {
 	height: 400px;
-	width: 400px;
+	width: 300px;
 	text-align: center;
 	transform: rotateY(180deg);
 	color: rgb(255, 229, 3);
