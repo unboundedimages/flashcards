@@ -3,11 +3,14 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
+header {
+	background-color: purple;
+}
 .wrapper {
 	cursor: pointer;
 	height: 400px;
 	width: 300px;
+	padding: 12px 0px;
 	perspective: 1800px;
 	position: relative;
 	margin: auto;
@@ -18,15 +21,18 @@ body {
 	height: 400px;
 	width: 300px;
 	position: absolute;
-	border: 1px solid #300;
+	/*border-color: purple;*/
+	border: 6px solid rgb(126, 41, 114);
 	transform-style: preserve-3d;
 	transition: all 0.4s ease-in-out;
 	background-color: rgb(255, 229, 3);
+	box-shadow: 0px 6px 10px #4f2c50;
 }
 
 .card:hover {
 	transform: rotateY(180deg);
 	transition: all 0.4s ease-in-out;
+	border: 6px solid rgb(255, 229, 3);;
 }
 
 .card #front_nine {
@@ -43,7 +49,7 @@ body {
 	color: #333;
 	font-size: 5.3em;
 	margin:auto;
-	padding-top: 9%;
+	padding-top: 15%;
 	color: rgb(112, 20, 127);
 }
 
@@ -87,9 +93,10 @@ hr {
 	margin:auto;
 	position:relative;
 	top: 1px;
+	right:40px;
 	height: 200px;
 	width: 340px;
-	font-size: 2.3em;
+	font-size: 1.3em;
 	color: rgb(255, 229, 3);
 }
 
@@ -97,6 +104,7 @@ hr {
 	margin:auto;
 	position:relative;
 	top: 1px;
+	right:40px;
 	height: 200px;
 	width: 340px;
 	font-size: 4.3em;
@@ -107,9 +115,10 @@ hr {
 	margin:auto;
 	position:relative;
 	top: 50px;
+	right:12%;
 	height: 200px;
 	width: 340px;
-	font-size: 2.3em;
+	font-size: 1.3em;
 	color: rgb(255, 229, 3);
 }
 
@@ -117,21 +126,21 @@ hr {
 	margin:auto;
 	position:relative;
 	top: 55px;
-	right: 3px;
+	right: 40px;
 	height: 200px;
 	width: 340px;
-	font-size: 1.3em;
+	font-size: 1.0em;
 	color: rgb(255, 229, 3);
 }
 
 #three {
 	margin:auto;
 	position:relative;
-	top: 20px;
-	right: 3px;
+	top: 40px;
+	right: 40px;
 	height: 200px;
 	width: 340px;
-	font-size: 1.3em;
+	font-size: 1.0em;
 	color: rgb(255, 229, 3);
 }
 
@@ -139,10 +148,10 @@ hr {
 	margin:auto;
 	position:relative;
 	top: 32px;
-	right: 3px;
+	right: 40px;
 	height: 200px;
 	width: 340px;
-	font-size: 1em;
+	font-size: 0.7em;
 	color: rgb(255, 229, 3);
 }
 
@@ -151,7 +160,7 @@ hr {
 	margin:auto;
 	position:relative;
 	/*top: 32px;*/
-	right: 3px;
+	right: 40px;
 	height: 200px;
 	width: 340px;
 	font-size: 1.15em;
@@ -161,11 +170,22 @@ hr {
 #ten {
 	margin:auto;
 	position:relative;
-	top: 10px;
-	right: 3px;
+	top: 32px;
+	right: 40px;
 	height: 200px;
 	width: 340px;
-	font-size: 1.01em;
+	font-size: .7em;
+	color: rgb(255, 229, 3);
+}
+
+#eleven {
+	margin:auto;
+	position:relative;
+	top: 25px;
+	right: 40px;
+	height: 200px;
+	width: 340px;
+	font-size: .7em;
 	color: rgb(255, 229, 3);
 }
 
