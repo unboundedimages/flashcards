@@ -23,9 +23,9 @@ header {
 	position: absolute;
 	/*border-color: purple;*/
 	border: 10px solid transparent;
-	-webkit-border-image: url(img/yellowpurple.jpg) 50 round; /* Safari 3.1-5 */
+	-webkit-border-image: url(img/swirl.png) 50 round; /* Safari 3.1-5 */
 	-o-border-image: url(img/yellowpurple.jpg) 50 round; /* Opera 11-12.1 */
-	border-image: url(img/yellowpurple.jpg) 50 round;
+	border-image: url(img/swirl.png) 50 round;
 	transform-style: preserve-3d;
 	transition: all 0.4s ease-in-out;
 	background-color: rgb(255, 229, 3);
@@ -192,20 +192,24 @@ hr {
 	color: rgb(255, 229, 3);
 }
 
+nav {
+	width:250px;	
+	margin: auto;
+	padding: 32px;
+}
+
 button {
 	font-size: 1.0em;
 	border: none;
-	width: 123px;
+	width: 116px;
 	height: 48px;
-	display: block;
 	text-align:center;
 	text-decoration:none;
 	color: #ecf0f1;
 	outline-color: rgb(67, 22, 61);
 	box-shadow: 0px 6px 10px #4f2c50;
 	background: #7e2972;
-	margin: auto;
-	margin-top: 20px;
+	padding-left: 10px
 }
 
 button:active {
@@ -219,4 +223,8 @@ button:active {
 
 button:focus {
 
+}
+
+#next {
+	margin-right: 14px
 }

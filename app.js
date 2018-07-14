@@ -24,25 +24,118 @@ document.getElementById("multiplicand").innerHTML = multiplicand[Current];
 
 function Prev(){
 	if(Current == 0){
-		Current = multiplicand.length && product.length - 1 && stars.length -1;}
-		else{
-			Current--;}
+		Current = multiplicand.length && product.length - 1 && stars.length -1;
+	}
+	else
+	{
+		Current--;
+	}
 
-			document.getElementById("multiplicand").innerHTML = multiplicand[Current];
-			document.getElementById("product").innerHTML = product[Current];
-			document.getElementById("stars").innerHTML = stars[Current];
-		}
+	document.getElementById("multiplicand").innerHTML = multiplicand[Current];
+	document.getElementById("product").innerHTML = product[Current];
+	document.getElementById("stars").innerHTML = stars[Current];
+	var flipSound =  new Audio();	
+	flipSound.src = "media/Card_Flip.m4a"
+	flipSound.play();
+}
 
-		function Next(){
-			if(Current == multiplicand.length -1 && product.length - 1 && stars.length -1){
-				Current = 0}
-				else{
-					Current++;}
+function Next(){
+	if
+	(Current == multiplicand.length -1 && product.length - 1 && stars.length -1){
+		Current = 0
+	}
+	else
+	{
+		Current++;
+	}
 
-					document.getElementById("multiplicand").innerHTML = multiplicand[Current];
-					document.getElementById("product").innerHTML = product[Current];
-					document.getElementById("stars").innerHTML = stars[Current];
-				}
+	document.getElementById("multiplicand").innerHTML = multiplicand[Current];
+	document.getElementById("product").innerHTML = product[Current];
+	document.getElementById("stars").innerHTML = stars[Current];
+	var flipSound =  new Audio();	
+	flipSound.src = "media/Card_Flip.m4a"
+	flipSound.play();
+}
+
+
+document.onkeydown = checkKey;
+
+function checkKey(e) {
+
+	e = e || window.event;
+
+	if (e.keyCode == '38') {
+        // up arrow
+        if
+        (Current == multiplicand.length -1 && product.length - 1 && stars.length -1){
+        	Current = 0
+        }
+        else
+        {
+        	Current++;
+        }
+
+        document.getElementById("multiplicand").innerHTML = multiplicand[Current];
+        document.getElementById("product").innerHTML = product[Current];
+        document.getElementById("stars").innerHTML = stars[Current];
+        var flipSound =  new Audio();	
+        flipSound.src = "media/Card_Flip.m4a"
+        flipSound.play();
+    }
+    else if (e.keyCode == '40') {
+        // down arrow
+        if(Current == 0){
+        	Current = multiplicand.length && product.length - 1 && stars.length -1;
+        }
+        else
+        {
+        	Current--;
+        }
+
+        document.getElementById("multiplicand").innerHTML = multiplicand[Current];
+        document.getElementById("product").innerHTML = product[Current];
+        document.getElementById("stars").innerHTML = stars[Current];
+        var flipSound =  new Audio();	
+        flipSound.src = "media/Card_Flip.m4a"
+        flipSound.play();
+    }
+    else if (e.keyCode == '37') {
+       // left arrow
+       if(Current == 0){
+       	Current = multiplicand.length && product.length - 1 && stars.length -1;
+       }
+       else
+       {
+       	Current--;
+       }
+
+       document.getElementById("multiplicand").innerHTML = multiplicand[Current];
+       document.getElementById("product").innerHTML = product[Current];
+       document.getElementById("stars").innerHTML = stars[Current];
+       var flipSound =  new Audio();	
+       flipSound.src = "media/Card_Flip.m4a"
+       flipSound.play();
+   }
+   else if (e.keyCode == '39') {
+       // right arrow
+       if
+       (Current == multiplicand.length -1 && product.length - 1 && stars.length -1){
+       	Current = 0
+       }
+       else
+       {
+       	Current++;
+       }
+
+       document.getElementById("multiplicand").innerHTML = multiplicand[Current];
+       document.getElementById("product").innerHTML = product[Current];
+       document.getElementById("stars").innerHTML = stars[Current];
+       var flipSound =  new Audio();	
+       flipSound.src = "media/Card_Flip.m4a"
+       flipSound.play();
+   }
+
+}
 
 // Dynamically generate the "*"
 // function starz(){
