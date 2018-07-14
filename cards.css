@@ -22,7 +22,10 @@ header {
 	width: 300px;
 	position: absolute;
 	/*border-color: purple;*/
-	border: 6px solid rgb(126, 41, 114);
+	border: 10px solid transparent;
+	-webkit-border-image: url(img/yellowpurple.jpg) 50 round; /* Safari 3.1-5 */
+	-o-border-image: url(img/yellowpurple.jpg) 50 round; /* Opera 11-12.1 */
+	border-image: url(img/yellowpurple.jpg) 50 round;
 	transform-style: preserve-3d;
 	transition: all 0.4s ease-in-out;
 	background-color: rgb(255, 229, 3);
@@ -83,19 +86,19 @@ hr {
 
 #stars {
 	margin: auto;
-	position: absolute;
+	position: relative;
 	top: 135px;
-	left: 8%;
 	overflow: hidden;
+	width: 253px;
 }
 
 #zero {
 	margin:auto;
 	position:relative;
-	top: 1px;
-	right:40px;
+	top: 40px;
+	right: 2px;
 	height: 200px;
-	width: 340px;
+	width: 240px;
 	font-size: 1.3em;
 	color: rgb(255, 229, 3);
 }
@@ -104,9 +107,9 @@ hr {
 	margin:auto;
 	position:relative;
 	top: 1px;
-	right:40px;
+	right:23px;
 	height: 200px;
-	width: 340px;
+	width: 300px;
 	font-size: 4.3em;
 	color: rgb(255, 229, 3);
 }
@@ -117,7 +120,7 @@ hr {
 	top: 50px;
 	right:12%;
 	height: 200px;
-	width: 340px;
+	width: 307px;
 	font-size: 1.3em;
 	color: rgb(255, 229, 3);
 }
@@ -137,9 +140,9 @@ hr {
 	margin:auto;
 	position:relative;
 	top: 40px;
-	right: 40px;
+	right: 25px;
 	height: 200px;
-	width: 340px;
+	width: 302px;
 	font-size: 1.0em;
 	color: rgb(255, 229, 3);
 }
