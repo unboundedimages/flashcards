@@ -223,8 +223,14 @@ button:active {
 }
 
 button:focus {
-
+	/*background-color: #FFC002;*/
 }
+
+button:hover {
+	background-color: #ffe503;
+	color: #4a1943;
+}
+
 
 #prev {
 	margin-right: 14px
