@@ -91,8 +91,8 @@ hr {
 #stars {
 	margin: auto;
 	position: relative;
-	top: 135px;
 	overflow: hidden;
+	height: 400px;
 	width: 253px;
 	text-shadow: 11px 13px 10px #480963;
 	-webkit-text-stroke: 2px purple;
@@ -112,9 +112,8 @@ hr {
 #zeroo {
 	margin:auto;
 	position:relative;
-	top: -22px;
-	/*right:23px;*/
-	/*height: 200px;*/
+	top: 107px;
+	height: 289px;
 	width: 200px;
 	font-size: 6.3em;
 	color: rgb(255, 229, 3);
@@ -124,7 +123,6 @@ hr {
 	margin: auto;
 	position: relative;
 	top: -22px;
-	/* right: 12%; */
 	height: 200px;
 	width: 252px;
 	font-size: 6.3em;
@@ -134,25 +132,38 @@ hr {
 #two {
 	margin:auto;
 	position:relative;
-	top: 55px;
-	right: 40px;
-	height: 200px;
-	width: 340px;
-	font-size: 1.0em;
+	top: 107px;
+	height: 289px;
+	width: 200px;
+	font-size: 5.3em;
 	color: rgb(255, 229, 3);
 }
 
 #three {
-	margin:auto;
-	position:relative;
-	top: 40px;
-	right: 25px;
+	margin: auto;
+	position: relative;
+	top: 16px;
 	height: 200px;
-	width: 302px;
-	font-size: 1.0em;
+	width: 252px;
+	font-size: 6.3em;
 	color: rgb(255, 229, 3);
 }
 
+#five {
+	margin: auto;
+	position: relative;
+	top: 16px;
+	height: 200px;
+	width: 252px;
+	font-size: 4.3em;
+	color: rgb(255, 229, 3);
+}
+
+#six {
+	position: relative;
+	top: 16px;
+	font-size: 4.3em;
+}
 #seven {
 	margin:auto;
 	position:relative;
