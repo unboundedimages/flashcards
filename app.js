@@ -3,18 +3,18 @@ var multiplicand = ["&nbsp 0","&nbsp 1","&nbsp 2", "&nbsp 3","&nbsp 4","&nbsp 5"
 var product = [0,9,18,27,36,45,54,63,72,81,90,99,108]
 var stars = [
 "<div id='zeroo'>0</div>",
-"<div id='one'>*********</div>",
-"<div id='two'>*********\n*********</div>",
-"<div id= 'three'>*********<br>*********\n*********</div>",
-"<div id= 'three'>*********\n*********<br>*********\n*********</div>",
-"<div id= 'three'>*********\n*********<br>*********<br>*********\n*********</div>",
-"<div id= 'three'>*********\n*********<br>*********\n*********<br>*********\n*********</div>",
-"<div id= 'seven'>*********\n*********<br>*********\n*********\n*********<br>*********\n*********</div>",
-"<div id= 'eight'>*********\n*********<br>*********<br>*********\n*********<br>*********<br>*********\n*********</div>",
-"<div id= 'seven'>*********\n*********\n*********<br>*********\n*********\n*********<br>*********\n*********\n*********</div>",
-"<div id= 'ten'>*********\n*********<br>*********\n*********\n*********<br>*********\n*********\n*********<br>*********\n*********</div>",
-"<div id= 'eleven'>*********<br>*********\n*********\n*********<br>*********\n*********\n*********<br>*********\n*********\n*********<br>*********</div>",
-"<div id= 'ten'>*********\n*********\n*********<br>*********\n*********\n*********<br>*********\n*********\n*********<br>*********\n*********\n*********</div>"
+"<div id='one'>9</div>",
+"<div id='one'>9\n9</div>",
+"<div id= 'one'>9<br>9\n9</div>",
+"<div id= 'three'>9\n9<br>9\n9</div>",
+"<div id= 'three'>9\n9<br>9<br>9\n9</div>",
+"<div id= 'three'>9\n9<br>9\n9<br>9\n9</div>",
+"<div id= 'seven'>9\n9<br>9\n9\n9<br>9\n9</div>",
+"<div id= 'eight'>9\n9<br>9<br>9\n9<br>9<br>9\n9</div>",
+"<div id= 'seven'>9\n9\n9<br>9\n9\n9<br>9\n9\n9</div>",
+"<div id= 'ten'>9\n9<br>9\n9\n9<br>9\n9\n9<br>9\n9</div>",
+"<div id= 'eleven'>9<br>9\n9\n9<br>9\n9\n9<br>9\n9\n9<br>9</div>",
+"<div id= 'ten'>9\n9\n9<br>9\n9\n9<br>9\n9\n9<br>9\n9\n9</div>"
 ];
 var Current = 0;
 
@@ -143,7 +143,7 @@ function checkKey(e) {
  //    for (i = 12; i >= 0; i = i - 1) {
  //        var s;
  //        for (s = 0; s < i; s = s + 1) {
- //            document.write("\n*********");
+ //            document.write("\n9");
  //        }
  //        //print a new line
  //        document.write("<br>");

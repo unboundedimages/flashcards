@@ -26,6 +26,7 @@ header {
 	-webkit-border-image: url(img/swirl.png) 50 round; /* Safari 3.1-5 */
 	-o-border-image: url(img/yellowpurple.jpg) 50 round; /* Opera 11-12.1 */
 	border-image: url(img/swirl.png) 50 round;
+	border: 6px solid rgb(112, 20, 127);
 	transform-style: preserve-3d;
 	transition: all 0.4s ease-in-out;
 	background-color: rgb(255, 229, 3);
@@ -34,8 +35,8 @@ header {
 
 .card:hover {
 	transform: rotateY(180deg);
-	transition: all 0.4s ease-in-out;
-	border: 6px solid rgb(255, 229, 3);;
+	transition: all 1.2s ease-in-out;
+	border: 6px solid rgb(255, 229, 3);
 }
 
 .card #front_nine {
@@ -77,7 +78,10 @@ hr {
 	margin:auto;
 	/*padding-top: 9%;*/
 	font-size: 1.5em;
+	/*background-image: url(img/Purple_starburst_mini.svg);*/
 	background-color: rgb(112, 20, 127);
+	/*background-size: 400px;*/
+	/*background-repeat:no-repeat; */
 }
 
 #product {
@@ -90,6 +94,8 @@ hr {
 	top: 135px;
 	overflow: hidden;
 	width: 253px;
+	text-shadow: 11px 13px 10px #480963;
+	-webkit-text-stroke: 2px purple;
 }
 
 #zero {
@@ -106,22 +112,22 @@ hr {
 #zeroo {
 	margin:auto;
 	position:relative;
-	top: 1px;
-	right:23px;
-	height: 200px;
-	width: 300px;
-	font-size: 4.3em;
+	top: -22px;
+	/*right:23px;*/
+	/*height: 200px;*/
+	width: 200px;
+	font-size: 6.3em;
 	color: rgb(255, 229, 3);
 }
 
 #one {
-	margin:auto;
-	position:relative;
-	top: 50px;
-	right:12%;
+	margin: auto;
+	position: relative;
+	top: -22px;
+	/* right: 12%; */
 	height: 200px;
-	width: 307px;
-	font-size: 1.3em;
+	width: 252px;
+	font-size: 6.3em;
 	color: rgb(255, 229, 3);
 }
 
@@ -225,6 +231,6 @@ button:focus {
 
 }
 
-#next {
+#prev {
 	margin-right: 14px
 }
