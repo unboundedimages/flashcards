@@ -1,20 +1,20 @@
 //make an array wiith numbers to be multiplied
-var multiplicand = ["&nbsp 0","&nbsp 1","&nbsp 2", "&nbsp 3","&nbsp 4","&nbsp 5","&nbsp 6","&nbsp 7","&nbsp 8","&nbsp 9", "10","11",12]; 
+var multiplicand = ["&nbsp 0","&nbsp 1","&nbsp 2", "&nbsp 3","&nbsp 4","&nbsp 5","&nbsp 6","&nbsp 7","&nbsp 8","&nbsp 9", "10","11","12"]; 
 var product = [0,9,18,27,36,45,54,63,72,81,90,99,108]
 var stars = [
 "<div id='zeroo'>0</div>", //0
 "<div id='zeroo'>9</div>", // 9x1
-"<div id='two'>9,9</div>",// 9x2 
+"<div id='two'>9<br>9</div>",// 9x2 
 "<div id= 'three'>9<br>9\n9</div>",		//9x3
 "<div id= 'three'>9\n9<br>9\n9</div>",  //9x4
 "<div id= 'five'>9\n9<br>9<br>9\n9</div>", //9x5
 "<div id= 'six'>9\n9<br>9\n9<br>9\n9</div>", //9x6
-"<div id= 'six'>9\n9<br>9\n9\n9<br>9\n9</div>",
-"<div id= 'eight'>9\n9<br>9<br>9\n9<br>9<br>9\n9</div>",
-"<div id= 'seven'>9\n9\n9<br>9\n9\n9<br>9\n9\n9</div>",
-"<div id= 'ten'>9\n9<br>9\n9\n9<br>9\n9\n9<br>9\n9</div>",
-"<div id= 'eleven'>9<br>9\n9\n9<br>9\n9\n9<br>9\n9\n9<br>9</div>",
-"<div id= 'ten'>9\n9\n9<br>9\n9\n9<br>9\n9\n9<br>9\n9\n9</div>"
+"<div id= 'six'>9\n9<br>9\n9\n9<br>9\n9</div>", //9x7
+"<div id= 'eight'>9<br>9\n9\n9<br>9\n9\n9<br>9</div>", //9x8
+"<div id= 'nine'>9\n9\n9<br>9\n9\n9<br>9\n9\n9</div>", //9x9
+"<div id= 'eight'>9\n9<br>9\n9\n9<br>9\n9\n9<br>9\n9</div>", //9x10
+"<div id= 'eight'>9\n9<br>9\n9\n9<br>9\n9\n9<br>9\n9\n9</div>", //9x11
+"<div id= 'eight'>9\n9\n9<br>9\n9\n9<br>9\n9\n9<br>9\n9\n9</div>", //9x12
 ];
 var Current = 0;
 

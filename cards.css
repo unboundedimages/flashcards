@@ -35,7 +35,7 @@ header {
 
 .card:hover {
 	transform: rotateY(180deg);
-	transition: all 1.2s ease-in-out;
+	transition: all 2.2s ease-in-out;
 	border: 6px solid rgb(255, 229, 3);
 }
 
@@ -101,11 +101,10 @@ hr {
 #zero {
 	margin:auto;
 	position:relative;
-	top: 40px;
-	right: 2px;
-	height: 200px;
-	width: 240px;
-	font-size: 1.3em;
+	top: 107px;
+	height: 289px;
+	width: 200px;
+	font-size: 6.3em;
 	color: rgb(255, 229, 3);
 }
 
@@ -132,10 +131,10 @@ hr {
 #two {
 	margin:auto;
 	position:relative;
-	top: 107px;
+	top: 16px;
 	height: 289px;
 	width: 200px;
-	font-size: 5.3em;
+	font-size: 6.3em;
 	color: rgb(255, 229, 3);
 }
 
@@ -164,38 +163,23 @@ hr {
 	top: 16px;
 	font-size: 4.3em;
 }
-#seven {
-	margin:auto;
-	position:relative;
-	top: 32px;
-	right: 40px;
-	height: 200px;
-	width: 340px;
-	font-size: 0.7em;
-	color: rgb(255, 229, 3);
-}
-
 
 #eight {
-	margin:auto;
 	position:relative;
-	/*top: 32px;*/
-	right: 40px;
-	height: 200px;
-	width: 340px;
-	font-size: 1.15em;
-	color: rgb(255, 229, 3);
+	top: 0px;
+	font-size: 3.6em;
+}
+
+#nine {
+	position: relative;
+	top: 16px;
+	font-size: 4.3em;
 }
 
 #ten {
-	margin:auto;
 	position:relative;
-	top: 32px;
-	right: 40px;
-	height: 200px;
-	width: 340px;
-	font-size: .7em;
-	color: rgb(255, 229, 3);
+	top: 0px;
+	font-size: 2.6em;
 }
 
 #eleven {
