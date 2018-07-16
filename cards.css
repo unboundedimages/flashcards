@@ -31,6 +31,12 @@ header {
 	transition: all 0.4s ease-in-out;
 	background-color: rgb(255, 229, 3);
 	box-shadow: 0px 6px 10px #4f2c50;
+	border-radius: 30px;
+}
+
+.card:focus {
+	outline-color: yellow;
+	outline-width: 7px;
 }
 
 .card:hover {
@@ -82,6 +88,7 @@ hr {
 	background-color: rgb(112, 20, 127);
 	/*background-size: 400px;*/
 	/*background-repeat:no-repeat; */
+	border-radius: 30px;
 }
 
 #product {
@@ -197,6 +204,8 @@ nav {
 	width:250px;	
 	margin: auto;
 	padding: 32px;
+	/*border-radius:15px;*/
+	border-radius: 5px
 }
 
 button {
@@ -210,7 +219,8 @@ button {
 	outline-color: rgb(67, 22, 61);
 	box-shadow: 0px 6px 10px #4f2c50;
 	background: #7e2972;
-	padding-left: 10px
+	/*padding-left: 10px;*/
+	border-radius: 16px
 }
 
 button:active {
@@ -218,17 +228,22 @@ button:active {
 	position:relative;
 	top:3px;
 	/*box-shadow: 0px 0px #2c3e50;*/
-	background: #ffe503;
+	background: #4c1943;
 	color: #7e2972;
+	border-radius: 16px
 }
 
 button:focus {
 	/*background-color: #FFC002;*/
+	outline-color: yellow;
+	outline-width: 17px;
+
 }
 
 button:hover {
 	background-color: #ffe503;
 	color: #4a1943;
+	border-radius: 16px
 }
 
 
