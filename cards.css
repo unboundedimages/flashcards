@@ -2,10 +2,13 @@ body {
 	background-image: url(img/yellowpurple.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position:center;
 }
+
 header {
 	background-color: purple;
 }
+
 .wrapper {
 	cursor: pointer;
 	height: 400px;
@@ -35,8 +38,8 @@ header {
 }
 
 .card:focus {
-	outline-color: yellow;
-	outline-width: 7px;
+	outline:none;
+	box-shadow: 0 0 10px black;
 }
 
 .card:hover {
@@ -235,8 +238,10 @@ button:active {
 
 button:focus {
 	/*background-color: #FFC002;*/
-	outline-color: yellow;
-	outline-width: 17px;
+	outline:none;
+	box-shadow: 0 0 10px black;
+	/* outline-color: yellow; */
+	/*outline-width: 17px;*/
 
 }
 
