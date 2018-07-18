@@ -10,12 +10,12 @@ header {
 }
 
 .wrapper {
+	position: relative;
 	cursor: pointer;
 	height: 400px;
 	width: 300px;
 	padding: 12px 0px;
 	perspective: 1800px;
-	position: relative;
 	margin: auto;
 	transition: ease-in;
 }
@@ -24,46 +24,60 @@ header {
 	height: 400px;
 	width: 300px;
 	position: absolute;
-	/*border-color: purple;*/
-	border: 10px solid transparent;
-	-webkit-border-image: url(img/swirl.png) 50 round; /* Safari 3.1-5 */
-	-o-border-image: url(img/yellowpurple.jpg) 50 round; /* Opera 11-12.1 */
-	border-image: url(img/swirl.png) 50 round;
 	border: 6px solid rgb(112, 20, 127);
+	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-	transition: all 0.4s ease-in-out;
+	-webkit-transition: -webkit-transform all .8s ease-in-out;
+	transition: all 2.2s ease-in-out;
 	background-color: rgb(255, 229, 3);
 	box-shadow: 0px 6px 10px #4f2c50;
 	border-radius: 30px;
 }
 
-.card:focus {
-	outline:none;
-	box-shadow: 0 0 10px black;
-}
 
 .card:hover {
+	-ms-transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
 	transform: rotateY(180deg);
-	transition: all 2.2s ease-in-out;
+	/*transition: all 2.2s ease-in-out;*/
 	border: 6px solid rgb(255, 229, 3);
 }
 
-.card #front_nine {
+#front_nine {
+	position: absolute;
 	height: 298px;
 	width: 67%;
 	backface-visibility: hidden; 
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	-ms-backface-visibility: hidden;
-	backface-visibility: hidden;;
-	position: absolute;
 	overflow: hidden;
 	text-align: right;
 	color: #333;
 	font-size: 5.3em;
-	margin:auto;
+	/*margin:auto;*/
 	padding-top: 15%;
 	color: rgb(112, 20, 127);
+}
+
+#back_nine {
+	position: absolute;
+	height: 400px;
+	width: 300px;
+	backface-visibility: hidden; 
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	text-align: center;
+	transform: rotateY(180deg);
+	color: #ffe503;
+	/*margin:auto;*/
+	font-size: 1.5em;
+	background-color: rgb(112, 20, 127);
+	border-radius: 30px;
+	display:block;
 }
 
 #line {
@@ -78,21 +92,6 @@ hr {
 	padding: 0;
 }
 
-.card #back_nine {
-	height: 400px;
-	width: 300px;
-	text-align: center;
-	transform: rotateY(180deg);
-	color: rgb(255, 229, 3);
-	margin:auto;
-	/*padding-top: 9%;*/
-	font-size: 1.5em;
-	/*background-image: url(img/Purple_starburst_mini.svg);*/
-	background-color: rgb(112, 20, 127);
-	/*background-size: 400px;*/
-	/*background-repeat:no-repeat; */
-	border-radius: 30px;
-}
 
 #product {
 
@@ -115,7 +114,7 @@ hr {
 	height: 289px;
 	width: 200px;
 	font-size: 6.3em;
-	color: rgb(255, 229, 3);
+	/*color: rgb(255, 229, 3);*/
 }
 
 #zeroo {
@@ -125,7 +124,7 @@ hr {
 	height: 289px;
 	width: 200px;
 	font-size: 6.3em;
-	color: rgb(255, 229, 3);
+	/*color: rgb(255, 229, 3);*/
 }
 
 #one {
@@ -135,7 +134,7 @@ hr {
 	height: 200px;
 	width: 252px;
 	font-size: 6.3em;
-	color: rgb(255, 229, 3);
+	/*color: rgb(255, 229, 3);*/
 }
 
 #two {
@@ -145,7 +144,7 @@ hr {
 	height: 289px;
 	width: 200px;
 	font-size: 6.3em;
-	color: rgb(255, 229, 3);
+	/*color: rgb(255, 229, 3);*/
 }
 
 #three {
@@ -155,7 +154,7 @@ hr {
 	height: 200px;
 	width: 252px;
 	font-size: 6.3em;
-	color: rgb(255, 229, 3);
+	/*color: rgb(255, 229, 3);*/
 }
 
 #five {
@@ -165,7 +164,7 @@ hr {
 	height: 200px;
 	width: 252px;
 	font-size: 4.3em;
-	color: rgb(255, 229, 3);
+	/*color: rgb(255, 229, 3);*/
 }
 
 #six {
@@ -192,7 +191,7 @@ hr {
 	font-size: 2.6em;
 }
 
-#eleven {
+/*#eleven {
 	margin:auto;
 	position:relative;
 	top: 25px;
@@ -201,57 +200,61 @@ hr {
 	width: 340px;
 	font-size: .7em;
 	color: rgb(255, 229, 3);
-}
+	}*/
 
-nav {
-	width:250px;	
-	margin: auto;
-	padding: 32px;
-	/*border-radius:15px;*/
-	border-radius: 5px
-}
+	nav {
+		width:250px;	
+		margin: auto;
+		padding: 32px;
+		/*border-radius:15px;*/
+		border-radius: 5px
+	}
 
-button {
-	font-size: 1.0em;
-	border: none;
-	width: 116px;
-	height: 48px;
-	text-align:center;
-	text-decoration:none;
-	color: #ecf0f1;
-	outline-color: rgb(67, 22, 61);
-	box-shadow: 0px 6px 10px #4f2c50;
-	background: #7e2972;
-	/*padding-left: 10px;*/
-	border-radius: 16px
-}
+	button {
+		font-size: 1.0em;
+		border: none;
+		width: 116px;
+		height: 48px;
+		text-align:center;
+		text-decoration:none;
+		color: #ecf0f1;
+		outline-color: rgb(67, 22, 61);
+		box-shadow: 0px 6px 10px #4f2c50;
+		background: #7e2972;
+		/*padding-left: 10px;*/
+		border-radius: 16px
+	}
 
-button:active {
-	border: none;
-	position:relative;
-	top:3px;
-	/*box-shadow: 0px 0px #2c3e50;*/
-	background: #4c1943;
-	color: #7e2972;
-	border-radius: 16px
-}
+	button:active {
+		border: none;
+		position:relative;
+		top:3px;
+		/*box-shadow: 0px 0px #2c3e50;*/
+		background: #4c1943;
+		color: #7e2972;
+		border-radius: 16px
+	}
 
-button:focus {
-	/*background-color: #FFC002;*/
+	button:focus {
+		/*background-color: #FFC002;*/
+		outline:none;
+		box-shadow: 0 0 10px black;
+		/* outline-color: yellow; */
+		/*outline-width: 17px;*/
+
+	}
+
+	button:hover {
+		background-color: #ffe503;
+		color: #4a1943;
+		border-radius: 16px
+	}
+
+/*.card:focus {
 	outline:none;
 	box-shadow: 0 0 10px black;
-	/* outline-color: yellow; */
-	/*outline-width: 17px;*/
+	}*/
 
-}
-
-button:hover {
-	background-color: #ffe503;
-	color: #4a1943;
-	border-radius: 16px
-}
-
-
-#prev {
-	margin-right: 14px
-}
+	#prev {
+		margin-right: 14px
+	}

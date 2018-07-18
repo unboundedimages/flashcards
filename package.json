@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/unboundedimages/flashcards/issues"
   },
-  "homepage": "https://github.com/unboundedimages/flashcards#readme"
+  "homepage": "https://github.com/unboundedimages/flashcards#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }

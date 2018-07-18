@@ -137,6 +137,16 @@ function checkKey(e) {
 
 }
 
+function touch(){
+	// document.getElementsByClassName("card");
+	// document.getElementById("front_nine").style.transform = "rotateY(18deg)";
+};
+
+function retouch(){
+	// document.getElementById("back_nine").style.WebkitTransform = "rotateY(18deg)";
+};
+
+
 // Dynamically generate the "*"
 // function starz(){
  // var i;
