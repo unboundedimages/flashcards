@@ -35,7 +35,7 @@ function Prev(){
 	document.getElementById("product").innerHTML = product[Current];
 	document.getElementById("stars").innerHTML = stars[Current];
 	var flipSound =  new Audio();	
-	flipSound.src = "media/Card_Flip.m4a"
+	flipSound.src = "media/Card_Flip_.m4a"
 	flipSound.play();
 }
 
@@ -53,7 +53,7 @@ function Next(){
 	document.getElementById("product").innerHTML = product[Current];
 	document.getElementById("stars").innerHTML = stars[Current];
 	var flipSound =  new Audio();	
-	flipSound.src = "media/Card_Flip.m4a"
+	flipSound.src = "media/Card_Flip_.m4a"
 	flipSound.play();
 }
 
@@ -79,7 +79,7 @@ function checkKey(e) {
         document.getElementById("product").innerHTML = product[Current];
         document.getElementById("stars").innerHTML = stars[Current];
         var flipSound =  new Audio();	
-        flipSound.src = "media/Card_Flip.m4a"
+        flipSound.src = "media/Card_Flip_.m4a"
         flipSound.play();
     }
     else if (e.keyCode == '40') {
@@ -96,7 +96,7 @@ function checkKey(e) {
         document.getElementById("product").innerHTML = product[Current];
         document.getElementById("stars").innerHTML = stars[Current];
         var flipSound =  new Audio();	
-        flipSound.src = "media/Card_Flip.m4a"
+        flipSound.src = "media/Card_Flip_.m4a"
         flipSound.play();
     }
     else if (e.keyCode == '37') {
@@ -113,7 +113,7 @@ function checkKey(e) {
        document.getElementById("product").innerHTML = product[Current];
        document.getElementById("stars").innerHTML = stars[Current];
        var flipSound =  new Audio();	
-       flipSound.src = "media/Card_Flip.m4a"
+       flipSound.src = "media/Card_Flip_.m4a"
        flipSound.play();
    }
    else if (e.keyCode == '39') {
@@ -131,7 +131,7 @@ function checkKey(e) {
        document.getElementById("product").innerHTML = product[Current];
        document.getElementById("stars").innerHTML = stars[Current];
        var flipSound =  new Audio();	
-       flipSound.src = "media/Card_Flip.m4a"
+       flipSound.src = "media/Card_Flip_.m4a"
        flipSound.play();
    }
 
