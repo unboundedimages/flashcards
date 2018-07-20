@@ -57,8 +57,6 @@ header {
 	background-color: rgb(255, 229, 3);
 	color: #333;
 	font-size: 5.3em;
-	/*margin:auto;*/
-	/*padding-top: 15%;*/
 	color: rgb(112, 20, 127);
 	border-radius: 30px;
 }
@@ -74,7 +72,6 @@ header {
 	text-align: center;
 	transform: rotateY(180deg);
 	color: #ffe503;
-	/*margin:auto;*/
 	font-size: 1.5em;
 	background-color: #70147f;
 	border-radius: 30px;
@@ -99,7 +96,6 @@ header {
 hr {
 	height: 1px;
 	border: 3px solid;
-	/*margin: 0em 11px 9px 111px;*/
 	padding: 0;
 }
 
@@ -135,7 +131,6 @@ hr {
 	height: 289px;
 	width: 200px;
 	font-size: 6.3em;
-	/*color: rgb(255, 229, 3);*/
 }
 
 #zeroo {
@@ -145,7 +140,6 @@ hr {
 	height: 289px;
 	width: 200px;
 	font-size: 6.3em;
-	/*color: rgb(255, 229, 3);*/
 }
 
 #one {
@@ -155,7 +149,6 @@ hr {
 	height: 200px;
 	width: 252px;
 	font-size: 6.3em;
-	/*color: rgb(255, 229, 3);*/
 }
 
 #two {
@@ -165,7 +158,6 @@ hr {
 	height: 289px;
 	width: 200px;
 	font-size: 6.3em;
-	/*color: rgb(255, 229, 3);*/
 }
 
 #three {
@@ -175,7 +167,6 @@ hr {
 	height: 200px;
 	width: 252px;
 	font-size: 6.3em;
-	/*color: rgb(255, 229, 3);*/
 }
 
 #five {
@@ -185,7 +176,6 @@ hr {
 	height: 200px;
 	width: 252px;
 	font-size: 4.3em;
-	/*color: rgb(255, 229, 3);*/
 }
 
 #six {
@@ -212,70 +202,51 @@ hr {
 	font-size: 2.6em;
 }
 
-/*#eleven {
-	margin:auto;
+nav {
+	width:250px;	
+	margin: auto;
+	padding: 32px;
+	/*border-radius:15px;*/
+	border-radius: 5px
+}
+
+button {
+	font-size: 1.0em;
+	border: none;
+	width: 116px;
+	height: 48px;
+	text-align:center;
+	text-decoration:none;
+	color: #ecf0f1;
+	outline-color: rgb(67, 22, 61);
+	box-shadow: 0px 6px 10px #4f2c50;
+	background: #7e2972;
+	/*padding-left: 10px;*/
+	border-radius: 16px
+}
+
+button:active {
+	border: none;
 	position:relative;
-	top: 25px;
-	right: 40px;
-	height: 200px;
-	width: 340px;
-	font-size: .7em;
-	color: rgb(255, 229, 3);
-	}*/
+	top:3px;
+	/*box-shadow: 0px 0px #2c3e50;*/
+	background: #4c1943;
+	color: #7e2972;
+	border-radius: 16px
+}
 
-	nav {
-		width:250px;	
-		margin: auto;
-		padding: 32px;
-		/*border-radius:15px;*/
-		border-radius: 5px
-	}
-
-	button {
-		font-size: 1.0em;
-		border: none;
-		width: 116px;
-		height: 48px;
-		text-align:center;
-		text-decoration:none;
-		color: #ecf0f1;
-		outline-color: rgb(67, 22, 61);
-		box-shadow: 0px 6px 10px #4f2c50;
-		background: #7e2972;
-		/*padding-left: 10px;*/
-		border-radius: 16px
-	}
-
-	button:active {
-		border: none;
-		position:relative;
-		top:3px;
-		/*box-shadow: 0px 0px #2c3e50;*/
-		background: #4c1943;
-		color: #7e2972;
-		border-radius: 16px
-	}
-
-	button:focus {
-		/*background-color: #FFC002;*/
-		outline:none;
-		box-shadow: 0 0 10px black;
-		/* outline-color: yellow; */
-		/*outline-width: 17px;*/
-
-	}
-
-	button:hover {
-		background-color: #ffe503;
-		color: #4a1943;
-		border-radius: 16px
-	}
-
-/*.card:focus {
+button:focus {
+	/* for accessiblity, this lets the shape fit the button*/
 	outline:none;
-	box-shadow: 0 0 10px black;
-	}*/
+	box-shadow: 0 0 10px yellow;
+}
 
-	#prev {
-		margin-right: 14px
-	}
+button:hover {
+	background-color: #ffe503;
+	color: #4a1943;
+	border-radius: 16px
+}
+
+#prev {
+	margin-right: 14px
+}
