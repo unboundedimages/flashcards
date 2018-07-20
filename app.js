@@ -137,26 +137,29 @@ function checkKey(e) {
 
 }
 
-function touch(){
-	// document.getElementsByClassName("card");
-	// document.getElementById("front_nine").style.transform = "rotateY(18deg)";
-};
+// function touch(){
+	
+// 	document.getElementById("front_nine").classList.toggle("back_nine");
+// 	console.log("fire in the whole")
+// };
 
-function retouch(){
-	// document.getElementById("back_nine").style.WebkitTransform = "rotateY(18deg)";
-};
+// function retouch(){
+	
+// 	document.getElementById("back_nine").classList.toggle("card");
+// };
 
 
 // Dynamically generate the "*"
 // function starz(){
- // var i;
- //    for (i = 12; i >= 0; i = i - 1) {
- //        var s;
- //        for (s = 0; s < i; s = s + 1) {
- //            document.write("\n9");
- //        }
+	// var i;
+	// for (i = 12; i >= 0; i = i - 1) {
+	// 	// var s;
+	// 	for (s = 0; s < i; s = s + 1) {
+	// 		document.write("\n9");
+	// 	}
  //        //print a new line
  //        document.write("<br>");
 
  //    }
 // }
+// starz()

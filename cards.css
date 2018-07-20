@@ -40,7 +40,7 @@ header {
 	-moz-transform: rotateY(180deg);
 	-o-transform: rotateY(180deg);
 	transform: rotateX(360deg) rotateY(-180deg) rotateY(-180deg) rotateX(-180deg) rotateX(180deg) rotateY(180deg);
-	/*transition: all 2.2s ease-in-out;*/
+	transition: all 2.2s ease-in-out;
 	border: 6px solid rgb(255, 229, 3);
 }
 
