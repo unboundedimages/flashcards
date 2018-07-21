@@ -136,7 +136,6 @@ function checkKey(e) {
    }
 
 }
-
 // function touch(){
 	
 // 	document.getElementById("front_nine").classList.toggle("back_nine");
