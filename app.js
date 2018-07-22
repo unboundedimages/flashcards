@@ -17,7 +17,17 @@ var stars = [
 "<div id= 'eight'>9\n9\n9<br>9\n9\n9<br>9\n9\n9<br>9\n9\n9</div>", //9x12
 ];
 var Current = 0;
+var x = document.getElementById("music")
 
+function chopin_(){
+	// document.getElementById("muusic").onclick
+	x.play()
+	
+}
+
+function pause_(){
+	x.pause()
+}
 //take the product of those numbers and inject them into product div
 //when next button is clicked, the next multiplicand and stars are put into the div
 document.getElementById("multiplicand").innerHTML = multiplicand[Current];
