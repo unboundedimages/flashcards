@@ -18,10 +18,18 @@ var stars = [
 ];
 var Current = 0;
 var x = document.getElementById("music")
+var playSound = false;
 
 function chopin_(){
 	// document.getElementById("muusic").onclick
-	x.play()
+	var x = document.getElementById("music")
+	if (playSound) {
+		x.pause()
+		playSound = false;
+	} else {
+		x.play()
+		playSound = true;
+	}	
 	
 }
 
