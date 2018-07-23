@@ -73,16 +73,13 @@ function Next(){
 	document.getElementById("multiplicand").innerHTML = multiplicand[Current];
 	document.getElementById("product").innerHTML = product[Current];
 	document.getElementById("stars").innerHTML = stars[Current];
-	// var flipSound =  new Audio();	
-	// flipSound.src = "media/Card_Flip_.m4a"
-	// flipSound.play();
 }
 
-
+/// using arrow keys
 document.onkeyup = checkKey;
 
 function checkKey(e) {
-
+	flipSound();
 	e = e || window.event;
 
 	if (e.keyCode == '38') {
@@ -99,9 +96,6 @@ function checkKey(e) {
         document.getElementById("multiplicand").innerHTML = multiplicand[Current];
         document.getElementById("product").innerHTML = product[Current];
         document.getElementById("stars").innerHTML = stars[Current];
-        var flipSound =  new Audio();	
-        flipSound.src = "media/Card_Flip_.m4a"
-        flipSound.play();
     }
     else if (e.keyCode == '40') {
         // down arrow
@@ -116,9 +110,6 @@ function checkKey(e) {
         document.getElementById("multiplicand").innerHTML = multiplicand[Current];
         document.getElementById("product").innerHTML = product[Current];
         document.getElementById("stars").innerHTML = stars[Current];
-        var flipSound =  new Audio();	
-        flipSound.src = "media/Card_Flip_.m4a"
-        flipSound.play();
     }
     else if (e.keyCode == '37') {
        // left arrow
@@ -133,9 +124,6 @@ function checkKey(e) {
        document.getElementById("multiplicand").innerHTML = multiplicand[Current];
        document.getElementById("product").innerHTML = product[Current];
        document.getElementById("stars").innerHTML = stars[Current];
-       var flipSound =  new Audio();	
-       flipSound.src = "media/Card_Flip_.m4a"
-       flipSound.play();
    }
    else if (e.keyCode == '39') {
        // right arrow
@@ -151,9 +139,6 @@ function checkKey(e) {
        document.getElementById("multiplicand").innerHTML = multiplicand[Current];
        document.getElementById("product").innerHTML = product[Current];
        document.getElementById("stars").innerHTML = stars[Current];
-       var flipSound =  new Audio();	
-       flipSound.src = "media/Card_Flip_.m4a"
-       flipSound.play();
    }
 
 }
