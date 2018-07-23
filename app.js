@@ -17,6 +17,12 @@ var stars = [
 "<div id= 'eight'>9\n9\n9<br>9\n9\n9<br>9\n9\n9<br>9\n9\n9</div>", //9x12
 ];
 var Current = 0;
+
+function flipSound(){
+	var s = document.getElementById('flip_')
+	s.play();
+}
+////// Music ////////////
 var x = document.getElementById("music")
 var playSound = false;
 
@@ -52,9 +58,6 @@ function Prev(){
 	document.getElementById("multiplicand").innerHTML = multiplicand[Current];
 	document.getElementById("product").innerHTML = product[Current];
 	document.getElementById("stars").innerHTML = stars[Current];
-	var flipSound =  new Audio();	
-	flipSound.src = "media/Card_Flip_.m4a"
-	flipSound.play();
 }
 
 function Next(){
@@ -70,9 +73,9 @@ function Next(){
 	document.getElementById("multiplicand").innerHTML = multiplicand[Current];
 	document.getElementById("product").innerHTML = product[Current];
 	document.getElementById("stars").innerHTML = stars[Current];
-	var flipSound =  new Audio();	
-	flipSound.src = "media/Card_Flip_.m4a"
-	flipSound.play();
+	// var flipSound =  new Audio();	
+	// flipSound.src = "media/Card_Flip_.m4a"
+	// flipSound.play();
 }
 
 
