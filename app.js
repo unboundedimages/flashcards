@@ -76,64 +76,71 @@ function Next(){
 }
 
 /// using arrow keys
-document.onkeyup = checkKey;
 
+document.onkeydown = checkKey;
 function checkKey(e) {
-	flipSound();
 	e = e || window.event;
 
-	if (e.keyCode == '38') {
+	if (e.keyCode === 38) {
         // up arrow
         if
         (Current == multiplicand.length -1 && product.length - 1 && stars.length -1){
         	Current = 0
+        	flipSound();
         }
         else
         {
         	Current++;
+        	flipSound();
         }
 
         document.getElementById("multiplicand").innerHTML = multiplicand[Current];
         document.getElementById("product").innerHTML = product[Current];
         document.getElementById("stars").innerHTML = stars[Current];
     }
-    else if (e.keyCode == '40') {
+    else if (e.keyCode === 40) {
         // down arrow
         if(Current == 0){
         	Current = multiplicand.length && product.length - 1 && stars.length -1;
+        	flipSound();
         }
         else
         {
         	Current--;
+        	flipSound();
         }
 
         document.getElementById("multiplicand").innerHTML = multiplicand[Current];
         document.getElementById("product").innerHTML = product[Current];
         document.getElementById("stars").innerHTML = stars[Current];
     }
-    else if (e.keyCode == '37') {
+    else if (e.keyCode === 37) {
        // left arrow
        if(Current == 0){
        	Current = multiplicand.length && product.length - 1 && stars.length -1;
+       	flipSound();
        }
        else
        {
        	Current--;
+       	flipSound();
        }
 
        document.getElementById("multiplicand").innerHTML = multiplicand[Current];
        document.getElementById("product").innerHTML = product[Current];
        document.getElementById("stars").innerHTML = stars[Current];
    }
-   else if (e.keyCode == '39') {
+   else if (e.keyCode === 39) {
        // right arrow
        if
        (Current == multiplicand.length -1 && product.length - 1 && stars.length -1){
        	Current = 0
+       	flipSound();
        }
        else
        {
        	Current++;
+       	flipSound();
        }
 
        document.getElementById("multiplicand").innerHTML = multiplicand[Current];
