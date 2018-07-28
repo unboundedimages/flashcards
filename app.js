@@ -1,6 +1,6 @@
 //make an array wiith numbers to be multiplied
-var multiplicand = ["&nbsp 0","&nbsp 1","&nbsp 2", "&nbsp 3","&nbsp 4","&nbsp 5","&nbsp 6","&nbsp 7","&nbsp 8","&nbsp 9", "10","11","12"]; 
-var product = [0,9,18,27,36,45,54,63,72,81,90,99,108]
+var multiplicand = ["&nbsp 0","&nbsp 1","&nbsp 2", "&nbsp 3","&nbsp 4","&nbsp 5","&nbsp 6","&nbsp 7","&nbsp 8","&nbsp 9", "10","11","12","<div id='restart' class='nextlevel1'>Continue</div>"]; 
+var product = [0,9,18,27,36,45,54,63,72,81,90,99,108,"next"]
 var stars = [
 "<div id='zeroo'>0</div>", //0
 "<div id='zeroo'>9</div>", // 9x1
@@ -15,8 +15,18 @@ var stars = [
 "<div id= 'eight'>9\n9<br>9\n9\n9<br>9\n9\n9<br>9\n9</div>", //9x10
 "<div id= 'eight'>9\n9<br>9\n9\n9<br>9\n9\n9<br>9\n9\n9</div>", //9x11
 "<div id= 'eight'>9\n9\n9<br>9\n9\n9<br>9\n9\n9<br>9\n9\n9</div>", //9x12
+// "<div id= 'eight'>9\n9\n9<br>9\n9\n9<br>9\n9\n9<br>9\n9\n9\n9</div>", //9x12
+"<div id='nextlevel1' class='next'><a href='#'>Next Level</a></div>"
 ];
 var Current = 0;
+// this will become the function that launches a popup modal instructing the user to start over or go to the next level
+function reset(){
+	if (document.getElementById("product").innerHTML === "next") {
+		// reset()
+		console.log("made it")
+		alert("Congratulations\nPlay again?")
+	}
+}
 
 function flipSound(){
 	var s = document.getElementById('flip_')
@@ -27,7 +37,6 @@ var x = document.getElementById("music")
 var playSound = false;
 
 function chopin_(){
-	// document.getElementById("muusic").onclick
 	var x = document.getElementById("music")
 	if (playSound) {
 		x.pause()
@@ -73,6 +82,11 @@ function Next(){
 	document.getElementById("multiplicand").innerHTML = multiplicand[Current];
 	document.getElementById("product").innerHTML = product[Current];
 	document.getElementById("stars").innerHTML = stars[Current];
+
+	// if (document.getElementById("product").innerHTML === "next") {
+	// 	reset()
+	// }
+	reset()
 }
 
 /// using arrow keys
@@ -97,6 +111,7 @@ function checkKey(e) {
         document.getElementById("multiplicand").innerHTML = multiplicand[Current];
         document.getElementById("product").innerHTML = product[Current];
         document.getElementById("stars").innerHTML = stars[Current];
+        reset()
     }
     else if (e.keyCode === 40) {
         // down arrow
@@ -146,9 +161,13 @@ function checkKey(e) {
        document.getElementById("multiplicand").innerHTML = multiplicand[Current];
        document.getElementById("product").innerHTML = product[Current];
        document.getElementById("stars").innerHTML = stars[Current];
+       reset()
    }
 
 }
+
+
+
 // function touch(){
 	
 // 	document.getElementById("front_nine").classList.toggle("back_nine");
