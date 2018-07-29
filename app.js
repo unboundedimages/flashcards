@@ -1,5 +1,5 @@
 //make an array wiith numbers to be multiplied
-var multiplicand = ["&nbsp 0","&nbsp 1","&nbsp 2", "&nbsp 3","&nbsp 4","&nbsp 5","&nbsp 6","&nbsp 7","&nbsp 8","&nbsp 9", "10","11","12","<div id='restart' class='nextlevel1'>Continue</div>"]; 
+var multiplicand = ["&nbsp 0","&nbsp 1","&nbsp 2", "&nbsp 3","&nbsp 4","&nbsp 5","&nbsp 6","&nbsp 7","&nbsp 8","&nbsp 9", "10","11","12","<div id='restart' class='nextlevel1'>Congratulations</div>"]; 
 var product = [0,9,18,27,36,45,54,63,72,81,90,99,108,"next"]
 var stars = [
 "<div id='zeroo'>0</div>", //0
@@ -16,15 +16,20 @@ var stars = [
 "<div id= 'eight'>9\n9<br>9\n9\n9<br>9\n9\n9<br>9\n9\n9</div>", //9x11
 "<div id= 'eight'>9\n9\n9<br>9\n9\n9<br>9\n9\n9<br>9\n9\n9</div>", //9x12
 // "<div id= 'eight'>9\n9\n9<br>9\n9\n9<br>9\n9\n9<br>9\n9\n9\n9</div>", //9x12
-"<div id='nextlevel1' class='next'><a href='#'>Next Level</a></div>"
+"<div id='next_'><a href='#' class='link'>Next Level</a></div>"
 ];
 var Current = 0;
 // this will become the function that launches a popup modal instructing the user to start over or go to the next level
 function reset(){
 	if (document.getElementById("product").innerHTML === "next") {
+		document.getElementById('multiplier').style.display = "none";
 		// reset()
 		console.log("made it")
-		alert("Congratulations\nPlay again?")
+		alert("Congratulations\n<a href='#'>Play again?</a>	\nTry the next level")
+		// document.getElementById('next_').style.display = "block";
+	}else {
+
+		document.getElementById('multiplier').style.display = "block";
 	}
 }
 
@@ -63,7 +68,7 @@ function Prev(){
 	{
 		Current--;
 	}
-
+	document.getElementById('multiplier').style.display = "block";
 	document.getElementById("multiplicand").innerHTML = multiplicand[Current];
 	document.getElementById("product").innerHTML = product[Current];
 	document.getElementById("stars").innerHTML = stars[Current];
@@ -124,7 +129,7 @@ function checkKey(e) {
         	Current--;
         	flipSound();
         }
-
+        document.getElementById('multiplier').style.display = "block";
         document.getElementById("multiplicand").innerHTML = multiplicand[Current];
         document.getElementById("product").innerHTML = product[Current];
         document.getElementById("stars").innerHTML = stars[Current];
@@ -140,7 +145,7 @@ function checkKey(e) {
        	Current--;
        	flipSound();
        }
-
+       document.getElementById('multiplier').style.display = "block";
        document.getElementById("multiplicand").innerHTML = multiplicand[Current];
        document.getElementById("product").innerHTML = product[Current];
        document.getElementById("stars").innerHTML = stars[Current];
