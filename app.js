@@ -1,6 +1,6 @@
 //make an array wiith numbers to be multiplied
-var multiplicand = ["&nbsp 0","&nbsp 1","&nbsp 2", "&nbsp 3","&nbsp 4","&nbsp 5","&nbsp 6","&nbsp 7","&nbsp 8","&nbsp 9", "10","11","12","<div id='restart' class='nextlevel1'>Congratulations</div>"]; 
-var product = [0,9,18,27,36,45,54,63,72,81,90,99,108,"next"]
+var multiplicand = ["&nbsp 0","&nbsp 1","&nbsp 2", "&nbsp 3","&nbsp 4","&nbsp 5","&nbsp 6","&nbsp 7","&nbsp 8","&nbsp 9", "10","11","12"]; 
+var product = [0,9,18,27,36,45,54,63,72,81,90,99,108,]
 var stars = [
 "<div id='zeroo'>0</div>", //0
 "<div id='zeroo'>9</div>", // 9x1
@@ -16,20 +16,23 @@ var stars = [
 "<div id= 'eight'>9\n9<br>9\n9\n9<br>9\n9\n9<br>9\n9\n9</div>", //9x11
 "<div id= 'eight'>9\n9\n9<br>9\n9\n9<br>9\n9\n9<br>9\n9\n9</div>", //9x12
 // "<div id= 'eight'>9\n9\n9<br>9\n9\n9<br>9\n9\n9<br>9\n9\n9\n9</div>", //9x12
-"<div id='next_'><a href='#' class='link'>Next Level</a></div>"
+"<div id='next_'><a href='index.html' class='link'>Next Level</a></div>"
 ];
 var Current = 0;
 // this will become the function that launches a popup modal instructing the user to start over or go to the next level
 function reset(){
-	if (document.getElementById("product").innerHTML === "next") {
+	if (document.getElementById("product").innerHTML === "0") {
 		document.getElementById('multiplier').style.display = "none";
-		// reset()
+		document.getElementById('operator').style.display = "none";
+		document.getElementById('nextlevel').style.display = "block";
 		console.log("made it")
-		alert("Congratulations\n<a href='#'>Play again?</a>	\nTry the next level")
+		alert("Congratulations you did it!!!\n To play again click Next\n    or\nTry the next level")
 		// document.getElementById('next_').style.display = "block";
 	}else {
 
+		document.getElementById('nextlevel').style.display = "none";
 		document.getElementById('multiplier').style.display = "block";
+		document.getElementById('operator').style.display = "block";
 	}
 }
 
@@ -69,6 +72,7 @@ function Prev(){
 		Current--;
 	}
 	document.getElementById('multiplier').style.display = "block";
+	document.getElementById('operator').style.display = "block";
 	document.getElementById("multiplicand").innerHTML = multiplicand[Current];
 	document.getElementById("product").innerHTML = product[Current];
 	document.getElementById("stars").innerHTML = stars[Current];
@@ -130,9 +134,11 @@ function checkKey(e) {
         	flipSound();
         }
         document.getElementById('multiplier').style.display = "block";
+        document.getElementById('operator').style.display = "block";
         document.getElementById("multiplicand").innerHTML = multiplicand[Current];
         document.getElementById("product").innerHTML = product[Current];
         document.getElementById("stars").innerHTML = stars[Current];
+        document.getElementById('nextlevel').style.display = "none";
     }
     else if (e.keyCode === 37) {
        // left arrow
@@ -146,9 +152,11 @@ function checkKey(e) {
        	flipSound();
        }
        document.getElementById('multiplier').style.display = "block";
+       document.getElementById('operator').style.display = "block";
        document.getElementById("multiplicand").innerHTML = multiplicand[Current];
        document.getElementById("product").innerHTML = product[Current];
        document.getElementById("stars").innerHTML = stars[Current];
+       document.getElementById('nextlevel').style.display = "none";
    }
    else if (e.keyCode === 39) {
        // right arrow
