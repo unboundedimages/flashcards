@@ -16,7 +16,7 @@ var stars = [
 "<div id= 'eight'>9\n9<br>9\n9\n9<br>9\n9\n9<br>9\n9\n9</div>", //9x11
 "<div id= 'eight'>9\n9\n9<br>9\n9\n9<br>9\n9\n9<br>9\n9\n9</div>", //9x12
 // "<div id= 'eight'>9\n9\n9<br>9\n9\n9<br>9\n9\n9<br>9\n9\n9\n9</div>", //9x12
-"<div id='next_'><a href='index.html' class='link'>Next Level</a></div>"
+// "<div id='next_'><a href='index.html' class='link'>Next Level</a></div>"
 ];
 var Current = 0;
 // this will become the function that launches a popup modal instructing the user to start over or go to the next level
@@ -25,6 +25,8 @@ function reset(){
 		document.getElementById('multiplier').style.display = "none";
 		document.getElementById('operator').style.display = "none";
 		document.getElementById('nextlevel').style.display = "block";
+		document.getElementById('next_').style.display = "block";
+		document.getElementById('stars').style.display = "none";
 		console.log("made it")
 		alert("Congratulations you did it!!!\n To play again click Next\n    or\nTry the next level")
 		// document.getElementById('next_').style.display = "block";
@@ -33,6 +35,8 @@ function reset(){
 		document.getElementById('nextlevel').style.display = "none";
 		document.getElementById('multiplier').style.display = "block";
 		document.getElementById('operator').style.display = "block";
+		document.getElementById('next_').style.display = "none";
+		document.getElementById('stars').style.display = "block";
 	}
 }
 
@@ -139,6 +143,8 @@ function checkKey(e) {
         document.getElementById("product").innerHTML = product[Current];
         document.getElementById("stars").innerHTML = stars[Current];
         document.getElementById('nextlevel').style.display = "none";
+        document.getElementById('next_').style.display = "none";
+        document.getElementById('stars').style.display = "block";
     }
     else if (e.keyCode === 37) {
        // left arrow
@@ -157,6 +163,8 @@ function checkKey(e) {
        document.getElementById("product").innerHTML = product[Current];
        document.getElementById("stars").innerHTML = stars[Current];
        document.getElementById('nextlevel').style.display = "none";
+       document.getElementById('next_').style.display = "none";
+       document.getElementById('stars').style.display = "block";
    }
    else if (e.keyCode === 39) {
        // right arrow
