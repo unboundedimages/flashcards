@@ -21,7 +21,7 @@ var stars = [
 var Current = 0;
 // this will become the function that launches a popup modal instructing the user to start over or go to the next level
 function reset(){
-	if (document.getElementById("product").innerHTML === "0") {
+	if (document.getElementById("product_").innerHTML === "0") {
 		document.getElementById('multiplier').style.display = "none";
 		document.getElementById('operator').style.display = "none";
 		document.getElementById('nextlevel').style.display = "block";
@@ -79,6 +79,7 @@ function Prev(){
 	document.getElementById('operator').style.display = "block";
 	document.getElementById("multiplicand").innerHTML = multiplicand[Current];
 	document.getElementById("product").innerHTML = product[Current];
+	document.getElementById("product_").innerHTML = product[Current];
 	document.getElementById("stars").innerHTML = stars[Current];
 }
 
@@ -94,6 +95,7 @@ function Next(){
 
 	document.getElementById("multiplicand").innerHTML = multiplicand[Current];
 	document.getElementById("product").innerHTML = product[Current];
+	document.getElementById("product_").innerHTML = product[Current];
 	document.getElementById("stars").innerHTML = stars[Current];
 
 	// if (document.getElementById("product").innerHTML === "next") {
@@ -123,6 +125,7 @@ function checkKey(e) {
 
         document.getElementById("multiplicand").innerHTML = multiplicand[Current];
         document.getElementById("product").innerHTML = product[Current];
+        document.getElementById("product_").innerHTML = product[Current];
         document.getElementById("stars").innerHTML = stars[Current];
         reset()
     }
@@ -141,6 +144,7 @@ function checkKey(e) {
         document.getElementById('operator').style.display = "block";
         document.getElementById("multiplicand").innerHTML = multiplicand[Current];
         document.getElementById("product").innerHTML = product[Current];
+        document.getElementById("product_").innerHTML = product[Current];
         document.getElementById("stars").innerHTML = stars[Current];
         document.getElementById('nextlevel').style.display = "none";
         document.getElementById('next_').style.display = "none";
@@ -161,6 +165,7 @@ function checkKey(e) {
        document.getElementById('operator').style.display = "block";
        document.getElementById("multiplicand").innerHTML = multiplicand[Current];
        document.getElementById("product").innerHTML = product[Current];
+       document.getElementById("product_").innerHTML = product[Current];
        document.getElementById("stars").innerHTML = stars[Current];
        document.getElementById('nextlevel').style.display = "none";
        document.getElementById('next_').style.display = "none";
@@ -181,6 +186,7 @@ function checkKey(e) {
 
        document.getElementById("multiplicand").innerHTML = multiplicand[Current];
        document.getElementById("product").innerHTML = product[Current];
+       document.getElementById("product_").innerHTML = product[Current];
        document.getElementById("stars").innerHTML = stars[Current];
        reset()
    }
