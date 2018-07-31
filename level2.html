@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=2.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="cards.css">
 </head>
-<body ontouchstart>
+<body id="level2" ontouchstart>
 	<audio id="music" src="media/daily_download_20160204_128.mp3" type="audio/mp3" autoplay loop>
 		<source src="media/daily_download_20160204_128.mp3" type="audio/mp3" />
 	</audio>
@@ -14,26 +14,18 @@
 	</header>
 	<section ontouchstart="" class="wrapper">
 		<div ontouchstart= "" title="hover or swipe to reveal the other side" class ="card">
-			<div role="front of the card" id="front_nine">
+			<div role="front of the card" id="front_nine_">
 				<div id="nextlevel">
 					Ready for<br>the next<br>level?
 				</div>	
 				<div role="multiplier" id="multiplier">&nbsp;&nbsp;&nbsp;9</div>
 				<div role="operator symbol to muliply" id="operator">x<span role="multiplicand" id="multiplicand"></span></div>
 				<div id="line"><hr></div>
-				<div role="product" id="product">0</div>
 			</div>
 			<div ontouchstart>
 				<div id="back_nine">
-					<!-- <div class="nextlevel">
-						<a href="#">Next level</a>
-					</div> -->
-					<div id='next_'><a href='level2.html' class='link'>Next Level</a></div>
-					<div ontouchstart="" id="stars">
-						<div ontouchstart="" id="zero">
-							0
-						</div>
-					</div>
+					<div id='next_'><a href='index.html' class='link'>Next Level</a></div>
+					<div role="product" id="product">0</div>
 				</div>
 			</div>
 		</div>
