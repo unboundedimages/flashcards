@@ -11,7 +11,7 @@ function reset(){
 		document.getElementById('next_').style.display = "block";
 		document.getElementById('product').style.display = "none";
 		console.log("made it")
-		alert("Congratulations you did it!!!\n To play again click Next\n    or\nTry the next level")
+		alert("Thank you for viewing this demo!!!\n To play again click Next or\n Click on the card to go back\n to the prior level")
 	}else {
 
 		document.getElementById('nextlevel').style.display = "none";
