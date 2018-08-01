@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://localhost:3300/level2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Flash Cards</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=2.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="./Flash Cards_files/level2.css">
+</head>
+<body id="level2" ontouchstart="">
+	<audio id="music" src="media/daily_download_20160204_128.mp3" type="audio/mp3" autoplay="" loop="">
+		<source src="media/daily_download_20160204_128.mp3" type="audio/mp3">
+	</audio>
+	<header title="Practice multiplying 9 from 0 through 12" onclick="chopin_()" type="button">Multiplication Fundamentals 🔊 <span>⏸</span>
+	</header>
+	<section ontouchstart="" class="wrapper">
+		<div title="hover or swipe to reveal the other side" class="card">
+			<div role="front of the card" id="front_nine">
+				<div id="nextlevel">
+					Ready for<br>the next<br>level?
+				</div>	
+				<div role="multiplier" id="multiplier">&nbsp;&nbsp;&nbsp;9</div>
+				<div role="operator symbol to muliply" id="operator">x<span role="multiplicand" id="multiplicand">&nbsp; 0</span></div>
+				<div id="line"><hr></div>
+			</div>
+			<!-- <div ontouchstart> -->
+				<div id="back_nine_">
+					<a href="http://localhost:3300/index.html" class="link"><div id="next_">Next Level</div></a>
+					<div role="product" id="product">0</div>
+				</div>
+				<!-- </div> -->
+			</div>
+		</section>
+		<script type="text/javascript" src="./Flash Cards_files/level2.js.download"></script>	
+		<nav>
+			<!-- <button id="prev" onclick="Prev();">🡄 Previous</button> -->
+			<audio id="flip_" src="media/Card_Flip_.m4a">
+			</audio>
+			<button role="button" title="show the previous card" id="prev" onclick="flipSound(); Prev();" type="button"> ⇦ Previous</button>
+			<button role="button" title="show the next card" id="next" onclick="flipSound(); Next();">Next ⇨</button>
+		</nav>
+		<footer>
+			Fundamentals
+		</footer>
+	
+	</body></html>
