@@ -80,6 +80,7 @@ function Prev(){
 	document.getElementById("multiplicand").innerHTML = multiplicand[Current];
 	document.getElementById("product").innerHTML = product[Current];
 	document.getElementById("stars").innerHTML = stars[Current];
+	document.getElementById('nextlevel').style.display = "none";
 }
 
 function Next(){

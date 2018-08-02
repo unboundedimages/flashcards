@@ -63,6 +63,7 @@ function Prev(){
 	document.getElementById("multiplicand").innerHTML = multiplicand[Current];
 	document.getElementById("product").innerHTML = product[Current];
 	document.getElementById("next_").style.display= "none"; 	
+	document.getElementById('nextlevel').style.display = "none";
 	// document.getElementById("stars").innerHTML = stars[Current];
 	flipSound()
 }
