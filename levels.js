@@ -13,13 +13,15 @@ for (uu = 0; uu < result.length; uu++) {
 }
 
 document.getElementById("user-selects").onchange = function() {
-  document.getElementById("multiplier").innerText = document.getElementById(
-    "user-selects"
-  ).value;
+  let userSelect = document.getElementById("user-selects").value;
+  document.getElementById("multiplier").innerText = userSelect;
+
+  let product = Number(userSelect) * 8;
+  console.log(product);
 };
 
 document.getElementById("multiplicand").innerText = text[8];
-document.getElementById("product").innerText = "";
+document.getElementById("product").innerText = result[2];
 
 console.log(result);
 console.log(text);
