@@ -1,32 +1,57 @@
+let userSelect = document.getElementById("user-selects");
 document.getElementById("user-selects").onchange = function() {
-  let multiplier = 8;
-  let userSelect = document.getElementById("user-selects").value;
+  console.log(userSelect.value);
+  document.getElementById("multiplier").innerText = userSelect.value;
+  getRange();
+};
 
+function getRange() {
   function range(start, end) {
     return Array(end - start + 1)
       .fill()
       .map((_, idx) => start + idx);
   }
-
-  var result = range(1, 15); // [9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
-  var combined = multiplier * result;
-  let text = [];
+  var multiplicand = range(1, 15); // [9, 10, 11, 12, ....]
+  let productArray = [],
+    Current = 0;
   let uu;
+  for (uu = 0; uu < multiplicand.length; uu++) {
+    productArray.push(multiplicand[uu] * userSelect.value);
+    let userNum = Number(userSelect.value);
+    console.log("THIS IS USER SELECT: ", userNum);
+    document.getElementById("multiplicand").innerText = multiplicand[Current];
+    document.getElementById("product").innerText = productArray[Current];
 
-  for (uu = 0; uu < result.length; uu++) {
-    text.push(result[uu] * userSelect);
+    console.log("THIS IS THE multiplicand", multiplicand);
+    console.log("THIS IS PRODUCTARRAY: ", productArray);
   }
+  function Next() {
+    document.getElementById("next").onclick = function() {
+      if (Current == multiplicand.length - 1 && productArray.length - 1) {
+        Current = 0;
+      } else {
+        Current++;
+      }
+      document.getElementById("multiplicand").innerHTML = multiplicand[Current];
+      document.getElementById("product").innerHTML = productArray[Current];
+    };
+  }
+  Next();
 
-  // document.getElementById("user-selects").onchange = function() {
-  //   let userSelect = document.getElementById("user-selects").value;
-  let userNum = Number(userSelect);
-  console.log("THIS IS USER SELECT: ", userNum);
-
-  document.getElementById("multiplicand").innerText = result;
-  document.getElementById("multiplier").innerText = userSelect;
-
-  document.getElementById("product").innerText = text;
-
-  console.log(result);
-  console.log(text);
-};
+  function Previous() {
+    document.getElementById("prev").onclick = function() {
+      if (Current === 0) {
+        Current = multiplicand.length - 1 && productArray.length - 1;
+      } else {
+        Current--;
+      }
+      document.getElementById("multiplicand").innerHTML = multiplicand[Current];
+      document.getElementById("product").innerHTML = productArray[Current];
+    };
+  }
+  Previous();
+  if (userSelect.value >= 1) {
+    document.getElementById("number-range").style.display = "none";
+  }
+}
+getRange();
