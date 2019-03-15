@@ -89,6 +89,8 @@ chopin_();
 // Dynamically generate the "*"
 let starzArray = [];
 let joinStarz = [];
+let starString = "";
+let fin = "";
 // let starsA = starzArray.split(["0,"]);
 var i;
 var s;
@@ -116,6 +118,8 @@ function starz(index) {
     console.log(starzArray[iii]);
   }
   joinStarz.push(starzArray.join(""));
+  starString = joinStarz[0].toString();
+  fin = starString.split("0");
   // console.log(index);
 }
 starz();
@@ -123,3 +127,5 @@ starz();
 // console.log(starzArray.join(" "));
 // console.log(starzArray.split(ff));
 console.log("join me ", joinStarz);
+console.log("stringy ", starString);
+console.log("grand finale ", fin);
