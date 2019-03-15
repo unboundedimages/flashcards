@@ -91,6 +91,7 @@ let starzArray = [];
 let joinStarz = [];
 let starString = "";
 let fin = "";
+let sequal;
 // let starsA = starzArray.split(["0,"]);
 var i;
 var s;
@@ -120,6 +121,9 @@ function starz(index) {
   joinStarz.push(starzArray.join(""));
   starString = joinStarz[0].toString();
   fin = starString.split("0");
+  fin.shift();
+  fin.shift();
+  fin.unshift("0");
   // console.log(index);
 }
 starz();
