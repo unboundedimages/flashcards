@@ -85,3 +85,37 @@ function chopin_() {
   }
 }
 chopin_();
+
+// Dynamically generate the "*"
+let starzArray = [];
+// let starsA = starzArray.split(["0,"]);
+var i;
+var s;
+function starz(index) {
+  for (i = 0; i <= 12; i = i + 1) {
+    for (s = 0; s <= i; s = s + 1) {
+      document.write("\n9");
+      // document.getElementById("stars").innerHTML = document.write("\n9");
+      starzArray.push(s && "*");
+      let starsA = starzArray.toString();
+      // let starsAA = starsA.split("0");
+      // console.log(starsAA);
+    }
+    //print a new line
+    // document.getElementById("stars").innerHTML = document.write("<br>");
+    // console.log(starzArray);
+    document.write("<br>");
+    // starzArray.push(i);
+    // starzArray.push(i & s);
+  }
+  // for (var iii = starzArray.length; iii > 0; iii--) {
+  //   if (starzArray[iii] === 0) {
+  //     starzArray.splice(iii, 1);
+  //   }
+  // }
+  // console.log(index);
+}
+starz();
+console.log(starzArray);
+// console.log(starzArray.split(ff));
+//
