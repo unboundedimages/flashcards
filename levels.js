@@ -35,6 +35,7 @@ document.getElementById("user-selects").onchange = function() {
   starz();
   // document.getElementById("stars").innerHTML = userNum;
   document.getElementById("stars").innerHTML = fin[0];
+  document.getElementById("product-front").innerHTML = fin[0];
   console.log("grand finale ", fin);
   console.log("this is the fn userNum:  ", userNum);
 };
@@ -74,8 +75,14 @@ function getRange() {
       }
       document.getElementById("multiplicand").innerHTML = multiplicand[Current];
       document.getElementById("product").innerHTML = fin[Current];
-      // document.getElementById("product").innerHTML = productArray[Current];
+      document.getElementById("product-front").innerHTML =
+        productArray[Current];
       document.getElementById("stars").innerHTML = fin[Current];
+      // psuedo
+      if (fin[Current] <= 9) {
+        // alert("cool");
+        document.getElementById("product").style.fontSize = "2.3em";
+      }
       flipSound();
     };
   }
@@ -84,12 +91,16 @@ function getRange() {
   function Previous() {
     document.getElementById("prev").onclick = function() {
       if (Current == 0) {
-        Current = multiplicand.length && productArray.length - 1;
+        Current =
+          multiplicand.length && productArray.length - 1 && fin.length - 1;
       } else {
         Current--;
       }
       document.getElementById("multiplicand").innerHTML = multiplicand[Current];
-      document.getElementById("product").innerHTML = productArray[Current];
+      document.getElementById("product").innerHTML = fin[Current];
+      // document.getElementById("product").innerHTML = productArray[Current]; this is for level2
+      document.getElementById("product-front").innerHTML =
+        productArray[Current];
       document.getElementById("stars").innerHTML = fin[Current];
       flipSound();
     };
