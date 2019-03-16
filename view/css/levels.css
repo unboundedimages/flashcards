@@ -32,6 +32,7 @@ header {
 #card-number {
   width: 300px;
   margin: auto;
+  margin-top: 35px;
 }
 
 #product {
@@ -39,10 +40,24 @@ header {
   width: 156px;
   position: relative;
   text-align: center;
-  top: 30%;
-  right: -1%;
+  top: 20%;
+  /* top: 30%; */
+  /* right: -1%; */
   overflow: hidden;
-  font-size: 5em;
+  font-size: 1.8em;
+  /* font-size: 2.3em; for single digits */
+  /* font-size: 5em; */
+}
+
+#product-front {
+  margin: auto;
+  width: 156px;
+  position: relative;
+  text-align: right;
+  /* top: 10%; */
+  right: 0%;
+  overflow: hidden;
+  font-size: 6em;
 }
 
 .card {
