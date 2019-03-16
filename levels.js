@@ -66,14 +66,15 @@ function getRange() {
       if (
         Current == multiplicand.length - 1 &&
         productArray.length - 1 &&
-        fin.length
+        fin.length - 1
       ) {
         Current = 0;
       } else {
         Current++;
       }
       document.getElementById("multiplicand").innerHTML = multiplicand[Current];
-      document.getElementById("product").innerHTML = productArray[Current];
+      document.getElementById("product").innerHTML = fin[Current];
+      // document.getElementById("product").innerHTML = productArray[Current];
       document.getElementById("stars").innerHTML = fin[Current];
       flipSound();
     };
