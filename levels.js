@@ -6,18 +6,9 @@ document.getElementById("user-selects").onchange = function() {
   document.getElementById("multiplier").innerText = userSelect.value;
   playSound = false;
   getRange();
-  // starz();
   let starzArray = [];
   let joinStarz = [];
   let starString = "";
-  // let fin = "";
-  // let sequal;
-  // let opts = document.getElementById("user-selects").value;
-  // let userSelected = opts.options[opts.selectedIndex].value;
-  // let userSelected = opts.value;
-  // console.log("the user selected: ", userSelected);
-
-  // let starsA = starzArray.split(["0,"]);
   var i;
   var s;
   function starz() {
@@ -26,26 +17,10 @@ document.getElementById("user-selects").onchange = function() {
       userNum;
       for (s = 0; s <= i; s = s + 1) {
         userNum;
-        // document.write("\n9");
-        // document.getElementById("stars").innerHTML = document.write("\n9");
-        // starzArray.push(s && "*");
-        // alert(userNum);
         starzArray.push(s && userNum);
-        // let starsA = starzArray.toString();
-        // let starsAA = starsA.split("0");
-        // console.log(starsAA);
       }
-      //print a new line
-      // document.getElementById("stars").innerHTML = document.write("<br>");
-      // console.log(starzArray);
-      // document.write("<br>");
-      // starzArray.push(i);
-      // starzArray.push(i & s);
     }
-    for (var iii = 1; iii < starzArray.length; iii++) {
-      // if (starzArray[iii] === 0) {
-      //   starzArray.splice(iii, 1);
-      // }
+    for (var iii = 0; iii < starzArray.length; iii++) {
       console.log(starzArray[iii]);
     }
     // joinStarz.push(starzArray.join(" - "));
@@ -54,13 +29,12 @@ document.getElementById("user-selects").onchange = function() {
     fin = starString.split("0");
     fin.shift();
     fin.shift();
-    // fin.unshift("0");
-    // userNum;
+    fin.unshift("0");
     console.log("this userNum inside of starz: ", userNum);
-    // console.log(index);
   }
   starz();
-  document.getElementById("stars").innerHTML = userNum;
+  // document.getElementById("stars").innerHTML = userNum;
+  document.getElementById("stars").innerHTML = fin[0];
   console.log("grand finale ", fin);
   console.log("this is the fn userNum:  ", userNum);
 };
@@ -71,7 +45,8 @@ function getRange() {
       .fill()
       .map((_, idx) => start + idx);
   }
-  var multiplicand = range(1, 15); // [9, 10, 11, 12, ....]
+  // var multiplicand = range(1, 15); // [9, 10, 11, 12, ....]
+  var multiplicand = range(0, 15); // [9, 10, 11, 12, ....]
   let productArray = [],
     Current = 0;
   let uu;
@@ -107,13 +82,14 @@ function getRange() {
 
   function Previous() {
     document.getElementById("prev").onclick = function() {
-      if (Current === 0) {
-        Current = multiplicand.length - 1 && productArray.length - 1;
+      if (Current == 0) {
+        Current = multiplicand.length && productArray.length - 1;
       } else {
         Current--;
       }
       document.getElementById("multiplicand").innerHTML = multiplicand[Current];
       document.getElementById("product").innerHTML = productArray[Current];
+      document.getElementById("stars").innerHTML = fin[Current];
       flipSound();
     };
   }
@@ -149,71 +125,3 @@ function chopin_() {
     playSound = true;
   }
 }
-chopin_();
-
-// Dynamically generate the "*"
-// let starzArray = [];
-// let joinStarz = [];
-// let starString = "";
-// let fin = "";
-// let sequal;
-// // let opts = document.getElementById("user-selects").value;
-// // let userSelected = opts.options[opts.selectedIndex].value;
-// // let userSelected = opts.value;
-// // console.log("the user selected: ", userSelected);
-
-// // let starsA = starzArray.split(["0,"]);
-// var i;
-// var s;
-// function starz() {
-//   userNum;
-//   for (i = 0; i <= 15; i = i + 1) {
-//     userNum;
-//     for (s = 0; s <= i; s = s + 1) {
-//       userNum;
-//       document.write("\n9");
-//       // document.getElementById("stars").innerHTML = document.write("\n9");
-//       starzArray.push(s && "*");
-//       // alert(userNum);
-//       // starzArray.push(s && userNum);
-//       let starsA = starzArray.toString();
-//       // let starsAA = starsA.split("0");
-//       // console.log(starsAA);
-//     }
-//     //print a new line
-//     // document.getElementById("stars").innerHTML = document.write("<br>");
-//     // console.log(starzArray);
-//     document.write("<br>");
-//     // starzArray.push(i);
-//     // starzArray.push(i & s);
-//   }
-//   for (var iii = 1; iii < starzArray.length; iii++) {
-//     // if (starzArray[iii] === 0) {
-//     //   starzArray.splice(iii, 1);
-//     // }
-//     console.log(starzArray[iii]);
-//   }
-//   joinStarz.push(starzArray.join(""));
-//   starString = joinStarz[0].toString();
-//   fin = starString.split("0");
-//   fin.shift();
-//   fin.shift();
-//   fin.unshift("0");
-//   // userNum;
-//   console.log("this userNum inside of starz: ", userNum);
-//   // console.log(index);
-// }
-// starz();
-// starzArray.join("-");
-// console.log(starzArray.join(" "));
-// console.log(starzArray.split(ff));
-// console.log("join me ", joinStarz);
-// console.log("stringy ", starString);
-// console.log("grand finale ", fin);
-
-// document.getElementById("user-selects").onchange = function() {
-//   console.log("select from dropdown ", opts);
-// };
-// console.log("this is OPTS: ", opts);
-
-// console.log("select from dropdown ", userSelected);
