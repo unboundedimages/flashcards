@@ -131,6 +131,11 @@ function getRange() {
   if (productArray[0] === productArray[1]) {
     console.log("productArray.length: ", productArray[0], productArray[1]);
     fin = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    document.getElementById("product").style.fontSize = "5.3em";
+    document.getElementById("product").style.top = "31%";
+  } else {
+    document.getElementById("product").style.fontSize = "2.3em";
+    document.getElementById("product").style.top = "20%";
   }
   Previous();
   if (userSelect.value >= 1) {
