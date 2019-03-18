@@ -1,6 +1,10 @@
+"use strict";
+
 let userSelect = document.getElementById("user-selects");
 let userNum;
 let fin = "";
+let productArray = [],
+  Current = 0;
 document.getElementById("user-selects").onchange = function() {
   console.log(userSelect.value);
   document.getElementById("multiplier").innerText = userSelect.value;
@@ -31,11 +35,18 @@ document.getElementById("user-selects").onchange = function() {
     fin.shift();
     fin.unshift("0");
     console.log("this userNum inside of starz: ", userNum);
+    if (userSelect.value == 0) {
+      fin = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    }
   }
   starz();
   // document.getElementById("stars").innerHTML = userNum;
   document.getElementById("stars").innerHTML = fin[0];
   document.getElementById("product-front").innerHTML = fin[0];
+  // if (productArray[2] == 0) {
+  //   document.getElementById("product-front").innerHTML = "wtf";
+  //   alert("this works>>> or nah????");
+  // }
   console.log("grand finale ", fin);
   console.log("this is the fn userNum:  ", userNum);
 };
@@ -48,8 +59,7 @@ function getRange() {
   }
   // var multiplicand = range(1, 15); // [9, 10, 11, 12, ....]
   var multiplicand = range(0, 15); // [9, 10, 11, 12, ....]
-  let productArray = [],
-    Current = 0;
+  (productArray = []), (Current = 0);
   let uu;
   for (uu = 0; uu < multiplicand.length; uu++) {
     productArray.push(multiplicand[uu] * userSelect.value);
@@ -83,6 +93,15 @@ function getRange() {
         // alert("cool");
         document.getElementById("product").style.fontSize = "2.3em";
       }
+
+      if (productArray[2] == 0) {
+        document.getElementById("product").innerHTML = productArray[Current];
+        document.getElementById("product").style.fontSize = "5.3em";
+        document.getElementById("product").style.top = "31%";
+      } else {
+        document.getElementById("product").style.fontSize = "2.3em";
+        document.getElementById("product").style.top = "20%";
+      }
       flipSound();
     };
   }
@@ -92,7 +111,7 @@ function getRange() {
     document.getElementById("prev").onclick = function() {
       if (Current == 0) {
         Current =
-          multiplicand.length && productArray.length - 1 && fin.length - 1;
+          multiplicand.length - 1 && productArray.length - 1 && fin.length - 1;
       } else {
         Current--;
       }
@@ -102,6 +121,31 @@ function getRange() {
       document.getElementById("product-front").innerHTML =
         productArray[Current];
       document.getElementById("stars").innerHTML = fin[Current];
+
+      // if (productArray[1] === 0 && productArray[2] == 0) {
+      //   Current = 0;
+      //   // Current = multiplicand.length - 1 && productArray.length - 1;
+      //   // document.getElementById("product").innerHTML = document.getElementById(
+      //   //   "product-front"
+      //   // ).innerText = productArray[0];
+      //   if (Current === 0) {
+      //     Current = multiplicand.length - 1;
+      //   } else {
+      //     Current--;
+      //   }
+      //   document.getElementById("multiplicand").innerHTML =
+      //     multiplicand[Current];
+      //   document.getElementById("product").innerHTML = productArray[Current];
+      //   // alert("this works>>> or nah????");
+      //   console.log("does the Current work here: ", Current);
+      //   // console.log("does the multiplicand work here: ", multiplicand[Current]);
+      //   console.log("does the productArray work here: ", productArray);
+      // }
+
+      if (fin[0] === 0) {
+        console.log("fin inside previous");
+      }
+
       flipSound();
     };
   }
