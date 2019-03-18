@@ -117,37 +117,20 @@ function getRange() {
       }
       document.getElementById("multiplicand").innerHTML = multiplicand[Current];
       document.getElementById("product").innerHTML = fin[Current];
-      // document.getElementById("product").innerHTML = productArray[Current]; this is for level2
       document.getElementById("product-front").innerHTML =
         productArray[Current];
       document.getElementById("stars").innerHTML = fin[Current];
 
-      // if (productArray[1] === 0 && productArray[2] == 0) {
-      //   Current = 0;
-      //   // Current = multiplicand.length - 1 && productArray.length - 1;
-      //   // document.getElementById("product").innerHTML = document.getElementById(
-      //   //   "product-front"
-      //   // ).innerText = productArray[0];
-      //   if (Current === 0) {
-      //     Current = multiplicand.length - 1;
-      //   } else {
-      //     Current--;
-      //   }
-      //   document.getElementById("multiplicand").innerHTML =
-      //     multiplicand[Current];
-      //   document.getElementById("product").innerHTML = productArray[Current];
-      //   // alert("this works>>> or nah????");
-      //   console.log("does the Current work here: ", Current);
-      //   // console.log("does the multiplicand work here: ", multiplicand[Current]);
-      //   console.log("does the productArray work here: ", productArray);
-      // }
-
       if (fin[0] === 0) {
         console.log("fin inside previous");
       }
-
       flipSound();
     };
+  }
+
+  if (productArray[0] === productArray[1]) {
+    console.log("productArray.length: ", productArray[0], productArray[1]);
+    fin = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
   }
   Previous();
   if (userSelect.value >= 1) {
