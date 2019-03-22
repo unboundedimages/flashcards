@@ -38,7 +38,9 @@ body {
 } */
 
 #navbar {
-  background-color: #333;
+  /* background-color: rgba(32, 5, 0, 0.73); transparent navbar */
+  /* background-color: #333; */
+  background-color: #1e1607;
   position: fixed;
   top: 0;
   width: 100%;
