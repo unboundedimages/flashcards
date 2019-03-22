@@ -81,6 +81,7 @@ function getRange() {
       } else {
         Current++;
       }
+      document.getElementById("colad").checked = false;
       document.getElementById("multiplicand").innerHTML = multiplicand[Current];
       document.getElementById("product").innerHTML = fin[Current];
       document.getElementById("product-front").innerHTML =
@@ -117,6 +118,7 @@ function getRange() {
       } else {
         Current--;
       }
+      document.getElementById("colad").checked = false;
       document.getElementById("multiplicand").innerHTML = multiplicand[Current];
       document.getElementById("product").innerHTML = fin[Current];
       document.getElementById("product-front").innerHTML =
@@ -158,18 +160,18 @@ function getRange() {
 
   //hide/show drop down select
   if (userSelect.value) {
-    document.getElementById("number-range").style.display = "none";
+    // document.getElementById("number-range").style.display = "none";
     playSound = false;
   }
 }
 getRange();
 
-function Reset() {
-  document.getElementById("reset").onclick = function() {
-    document.getElementById("number-range").style.display = "block";
-  };
-}
-Reset();
+// function Reset() {
+//   document.getElementById("reset").onclick = function() {
+//     document.getElementById("number-range").style.display = "block";
+//   };
+// }
+// Reset();
 
 function flipSound() {
   var s = document.getElementById("flip_");
