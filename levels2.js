@@ -42,7 +42,8 @@ document.getElementById("user-selects").onchange = function() {
   }
   starz();
   document.getElementById("stars").innerHTML = fin[0];
-  document.getElementById("product-front").innerHTML = fin[0];
+  //   document.getElementById("product-front").innerHTML = fin[0];
+  document.getElementById("product-front").innerHTML = "";
   console.log("grand finale ", fin[0]);
   console.log("this is the fn userNum:  ", userNum);
 };
