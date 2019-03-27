@@ -180,13 +180,40 @@ function flipSound() {
 
 var playSound = false;
 
+var music = document.getElementById("music");
 function chopin_() {
-  var x = document.getElementById("music");
-  if (playSound) {
-    x.pause();
-    playSound = false;
-  } else {
-    x.play();
-    playSound = true;
-  }
+  music.pause();
 }
+
+function startMusic() {
+  music.play();
+}
+window.onload = () => startMusic();
+
+function restartMusic() {
+  music.pause();
+  music.currentTime = 0;
+}
+
+document.getElementById("stop").onclick = () => restartMusic();
+document.getElementById("play").onclick = () => startMusic();
+
+// var coffeRequest = [
+//   {
+//     one: "regular coffee",
+//     two: "espressoshot",
+//     three: "cappuccina",
+//     four: "late"
+//   },
+//   {
+//     size1: "shot",
+//     size2: "small",
+//     size3: "medium",
+//     size4: "large"
+//   },
+//   {
+//     pour: () => {
+//       setInterval(console.log("this is some great hot coffee.  Yum!"), 500);
+//     }
+//   }
+// ];

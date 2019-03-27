@@ -181,13 +181,31 @@ function flipSound() {
 
 var playSound = false;
 
+// function chopin_() {
+//   var x = document.getElementById("music");
+//   if (playSound) {
+//     x.pause();
+//     playSound = false;
+//   } else {
+//     x.play();
+//     playSound = true;
+//   }
+// }
+
+var music = document.getElementById("music");
 function chopin_() {
-  var x = document.getElementById("music");
-  if (playSound) {
-    x.pause();
-    playSound = false;
-  } else {
-    x.play();
-    playSound = true;
-  }
+  music.pause();
 }
+
+function startMusic() {
+  music.play();
+}
+window.onload = () => startMusic();
+
+function restartMusic() {
+  music.pause();
+  music.currentTime = 0;
+}
+
+document.getElementById("stop").onclick = () => restartMusic();
+document.getElementById("play").onclick = () => startMusic();
